@@ -1,0 +1,86 @@
+CRITICAL - 2020-07-20 00:11:22 --> syntax error, unexpected ';', expecting ']'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-20 00:11:36 --> syntax error, unexpected 'return' (T_RETURN), expecting ']'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-20 00:11:47 --> syntax error, unexpected 'return' (T_RETURN)
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-20 00:12:02 --> Undefined property: CodeIgniter\HTTP\RedirectResponse::$withInput
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\Auth.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\Coding\\Xampp...', 26, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\Auth->register()
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-20 00:13:14 --> syntax error, unexpected ';', expecting ')'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-20 00:29:44 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-20 00:30:03 --> Cannot declare class App\Controllers\Auth because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-07-20 00:30:52 --> syntax error, unexpected '}', expecting ';'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Auth...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Auth...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\Auth.php(43): spl_autoload_call('App\\Models\\Auth...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\Auth->login()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-20 00:31:10 --> Undefined variable: table
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Models\AuthModel.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 8, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\Auth.php(47): App\models\AuthModel->get_data_login('', 'users')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\Auth->login()
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-07-20 00:31:25 --> Undefined variable: table
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Models\AuthModel.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 8, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\Auth.php(47): App\models\AuthModel->get_data_login('', 'users')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\Auth->login()
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}

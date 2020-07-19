@@ -1,0 +1,110 @@
+CRITICAL - 2020-07-19 04:35:21 --> Class 'App\Controllers\Controller' not found
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Router\Router.php(583): include_once()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('SiteHomeControl...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('SiteHomeControl...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-07-19 04:35:24 --> Class 'App\Controllers\Controller' not found
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Router\Router.php(583): include_once()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Router\Router.php(195): CodeIgniter\Router\Router->autoRoute('SiteHomeControl...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('SiteHomeControl...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-07-19 22:19:25 --> syntax error, unexpected '=', expecting ')'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-19 22:19:44 --> syntax error, unexpected '=', expecting ')'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-19 22:20:14 --> syntax error, unexpected '=', expecting ')'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-19 22:21:27 --> syntax error, unexpected '=', expecting ')'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-19 22:24:42 --> syntax error, unexpected '=', expecting ')'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-19 22:28:33 --> Duplicate entry '' for key 'users_email_unique'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `us...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\Auth.php(24): CodeIgniter\Model->insert(Array)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\Auth->register()
+#7 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-07-19 22:28:40 --> Duplicate entry '' for key 'users_email_unique'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `us...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\Auth.php(24): CodeIgniter\Model->insert(Array)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\Auth->register()
+#7 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-07-19 22:33:01 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ';' or ','
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('admin/login/log...', Array, true)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\Login.php(11): view('admin/login/log...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\Login->index()
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-07-19 22:36:26 --> Duplicate entry 'nhatnghetinh.haui@gmail.com' for key 'users_email_unique'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `us...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\Auth.php(24): CodeIgniter\Model->insert(Array)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\Auth->register()
+#7 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#10 {main}
