@@ -161,3 +161,27 @@ CRITICAL - 2020-07-20 21:09:12 --> Class 'CodeIgniter\app\Filters\AuthFilter' no
 #1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #2 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
 #3 {main}
+CRITICAL - 2020-07-20 23:51:27 --> Invalid file: header.php
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(525): CodeIgniter\View\View->render('header', NULL, true)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\admin\layout.php(2): CodeIgniter\View\View->include('header')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('admin/layout', Array, true)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\Dashboard.php(8): view('admin/layout')
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\Dashboard->index()
+#7 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-07-20 23:51:45 --> Invalid file: header.php
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('header.php')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(525): CodeIgniter\View\View->render('header', NULL, true)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\admin\layout.php(2): CodeIgniter\View\View->include('header')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('admin/layout', Array, true)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\Dashboard.php(8): view('admin/layout')
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\Dashboard->index()
+#7 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#10 {main}

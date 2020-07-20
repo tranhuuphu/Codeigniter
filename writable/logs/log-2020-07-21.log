@@ -1,0 +1,10 @@
+CRITICAL - 2020-07-21 00:01:31 --> Invalid file: layout.php
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout.php')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(257): CodeIgniter\View\View->render('layout', Array, true)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('admin/dashboard', Array, true)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\Dashboard.php(8): view('admin/dashboard')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\Dashboard->index()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
