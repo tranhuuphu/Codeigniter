@@ -84,3 +84,80 @@ CRITICAL - 2020-07-20 00:31:25 --> Undefined variable: table
 #4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #5 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
 #6 {main}
+CRITICAL - 2020-07-20 19:36:31 --> Call to undefined function App\Controllers\verifyHash()
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\Auth->login()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-07-20 19:46:16 --> Encrypter needs a starter key.
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Encryption\Encryption.php(155): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Config\Services.php(251): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\Auth.php(9): CodeIgniter\Config\Services::encrypter()
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(365): require_once('D:\\Coding\\Xampp...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#7 [internal function]: spl_autoload_call('App\\Controllers...')
+#8 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#9 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#10 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-07-20 19:46:33 --> Encrypter needs a starter key.
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Encryption\Encryption.php(155): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Config\Services.php(251): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\Auth.php(9): CodeIgniter\Config\Services::encrypter()
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(365): require_once('D:\\Coding\\Xampp...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#7 [internal function]: spl_autoload_call('App\\Controllers...')
+#8 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#9 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#10 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-07-20 19:46:47 --> Encrypter needs a starter key.
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Encryption\Encryption.php(155): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Config\Services.php(251): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\Auth.php(9): CodeIgniter\Config\Services::encrypter()
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(365): require_once('D:\\Coding\\Xampp...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#7 [internal function]: spl_autoload_call('App\\Controllers...')
+#8 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#9 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#10 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-07-20 20:03:37 --> Encrypter needs a starter key.
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Encryption\Encryption.php(155): CodeIgniter\Encryption\Exceptions\EncryptionException::forNeedsStarterKey()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Config\Services.php(251): CodeIgniter\Encryption\Encryption->initialize(Object(Config\Encryption))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\Auth.php(9): CodeIgniter\Config\Services::encrypter()
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(365): require_once('D:\\Coding\\Xampp...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#7 [internal function]: spl_autoload_call('App\\Controllers...')
+#8 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#9 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#10 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-07-20 21:07:53 --> Class 'app\Filters\AuthFilter' not found
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(382): CodeIgniter\Filters\Filters->run('admin/dashboard', 'before')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2020-07-20 21:08:55 --> Class 'CodeIgniter\Filters\AuthFilter' not found
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(382): CodeIgniter\Filters\Filters->run('admin/dashboard', 'before')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2020-07-20 21:09:12 --> Class 'CodeIgniter\app\Filters\AuthFilter' not found
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(382): CodeIgniter\Filters\Filters->run('admin/dashboard', 'before')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#3 {main}
