@@ -8,3 +8,314 @@ CRITICAL - 2020-07-21 00:01:31 --> Invalid file: layout.php
 #6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
 #8 {main}
+CRITICAL - 2020-07-21 06:40:43 --> Undefined variable: data
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\admin\header.php(173): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 173, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(525): CodeIgniter\View\View->render('admin/header', NULL, true)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\admin\layout.php(2): CodeIgniter\View\View->include('admin/header')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(257): CodeIgniter\View\View->render('admin/layout', Array, true)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('admin/dashboard', Array, true)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\Dashboard.php(8): view('admin/dashboard')
+#8 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\Dashboard->index()
+#9 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-07-21 06:41:24 --> Undefined variable: data
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\admin\header.php(173): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 173, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(525): CodeIgniter\View\View->render('admin/header', NULL, true)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\admin\layout.php(2): CodeIgniter\View\View->include('admin/header')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(257): CodeIgniter\View\View->render('admin/layout', Array, true)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('admin/dashboard', Array, true)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\Dashboard.php(8): view('admin/dashboard')
+#8 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\Dashboard->index()
+#9 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-07-21 17:54:05 --> syntax error, unexpected '}', expecting ')'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CLI\Console.php(86): CodeIgniter\CodeIgniter->run()
+#3 D:\Coding\Xampp\htdocs\Codeigniter\spark(57): CodeIgniter\CLI\Console->run()
+#4 {main}
+CRITICAL - 2020-07-21 17:55:49 --> syntax error, unexpected '}', expecting ')'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2020-07-21 17:56:32 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-07-21 17:58:02 --> Undefined variable: routes
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 51, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Router\RouteCollection.php(751): CodeIgniter\CodeIgniter->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(55): CodeIgniter\Router\RouteCollection->group('post', Object(Closure))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\Router\RouteCollection.php(751): CodeIgniter\CodeIgniter->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(59): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(780): require('D:\\Coding\\Xampp...')
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#7 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-07-21 17:58:04 --> Undefined variable: routes
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 51, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Router\RouteCollection.php(751): CodeIgniter\CodeIgniter->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(55): CodeIgniter\Router\RouteCollection->group('post', Object(Closure))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\Router\RouteCollection.php(751): CodeIgniter\CodeIgniter->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(59): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(780): require('D:\\Coding\\Xampp...')
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#7 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-07-21 17:58:16 --> Undefined variable: routes
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 51, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Router\RouteCollection.php(751): CodeIgniter\CodeIgniter->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(55): CodeIgniter\Router\RouteCollection->group('post', Object(Closure))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\Router\RouteCollection.php(751): CodeIgniter\CodeIgniter->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(59): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(780): require('D:\\Coding\\Xampp...')
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#7 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-07-21 17:58:18 --> Undefined variable: routes
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 51, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Router\RouteCollection.php(751): CodeIgniter\CodeIgniter->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(55): CodeIgniter\Router\RouteCollection->group('post', Object(Closure))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\Router\RouteCollection.php(751): CodeIgniter\CodeIgniter->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(59): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(780): require('D:\\Coding\\Xampp...')
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#7 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-07-21 17:58:19 --> Undefined variable: routes
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 51, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Router\RouteCollection.php(751): CodeIgniter\CodeIgniter->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(55): CodeIgniter\Router\RouteCollection->group('post', Object(Closure))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\Router\RouteCollection.php(751): CodeIgniter\CodeIgniter->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(59): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(780): require('D:\\Coding\\Xampp...')
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#7 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-07-21 17:58:20 --> Undefined variable: routes
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 51, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Router\RouteCollection.php(751): CodeIgniter\CodeIgniter->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(55): CodeIgniter\Router\RouteCollection->group('post', Object(Closure))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\Router\RouteCollection.php(751): CodeIgniter\CodeIgniter->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(59): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(780): require('D:\\Coding\\Xampp...')
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#7 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-07-21 17:58:24 --> Undefined variable: routes
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 51, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Router\RouteCollection.php(751): CodeIgniter\CodeIgniter->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(55): CodeIgniter\Router\RouteCollection->group('post', Object(Closure))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\Router\RouteCollection.php(751): CodeIgniter\CodeIgniter->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(59): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(780): require('D:\\Coding\\Xampp...')
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#7 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-07-21 18:01:53 --> Undefined variable: routes
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 51, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Router\RouteCollection.php(751): CodeIgniter\CodeIgniter->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(55): CodeIgniter\Router\RouteCollection->group('post', Object(Closure))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\Router\RouteCollection.php(751): CodeIgniter\CodeIgniter->Config\{closure}(Object(CodeIgniter\Router\RouteCollection))
+#4 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Routes.php(59): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(780): require('D:\\Coding\\Xampp...')
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#7 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-07-21 21:45:59 --> syntax error, unexpected '$table' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Post...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Post...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(20): spl_autoload_call('App\\Models\\Post...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->postAdd()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-21 22:00:50 --> syntax error, unexpected '=', expecting ')'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-21 22:01:06 --> syntax error, unexpected ';', expecting ')'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-21 22:03:17 --> Call to undefined function App\Controllers\convert_accented_characters()
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->postAdd()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-07-21 22:03:31 --> syntax error, unexpected ','
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-21 22:04:10 --> syntax error, unexpected ','
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-21 22:04:38 --> Call to undefined function App\Controllers\convert_accented_characters()
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->postAdd()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-07-21 22:14:23 --> fopen(http://localhost/Codeigniter/public/uploads/postindex.html): failed to open stream: HTTP wrapper does not support writeable connections
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://lo...', 'D:\\Coding\\Xampp...', 216, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\HTTP\Files\UploadedFile.php(216): fopen('http://localhos...', 'x+')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\HTTP\Files\UploadedFile.php(163): CodeIgniter\HTTP\Files\UploadedFile->setPath('http://localhos...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(48): CodeIgniter\HTTP\Files\UploadedFile->move('http://localhos...', 'thay-djoi-thong...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->postAdd()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-21 22:15:02 --> mkdir(): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No suc...', 'D:\\Coding\\Xampp...', 212, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\HTTP\Files\UploadedFile.php(212): mkdir('D:\\Coding\\Xampp...', 511, true)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\HTTP\Files\UploadedFile.php(163): CodeIgniter\HTTP\Files\UploadedFile->setPath('D:\\Coding\\Xampp...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(48): CodeIgniter\HTTP\Files\UploadedFile->move('D:\\Coding\\Xampp...', 'thay-djoi-thong...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->postAdd()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-21 22:15:32 --> fopen(http://localhost/Codeigniter/public/uploads/postindex.html): failed to open stream: HTTP wrapper does not support writeable connections
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://lo...', 'D:\\Coding\\Xampp...', 216, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\HTTP\Files\UploadedFile.php(216): fopen('http://localhos...', 'x+')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\HTTP\Files\UploadedFile.php(163): CodeIgniter\HTTP\Files\UploadedFile->setPath('http://localhos...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(48): CodeIgniter\HTTP\Files\UploadedFile->move('http://localhos...', 'thay-djoi-thong...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->postAdd()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-21 22:21:21 --> Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->postAdd()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-07-21 22:21:34 --> Cannot access protected property CodeIgniter\HTTP\Files\UploadedFile::$originalName
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->postAdd()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-07-21 22:22:41 --> Cannot use object of type CodeIgniter\HTTP\Files\UploadedFile as array
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->postAdd()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-07-21 22:26:52 --> fopen(http://localhost/Codeigniter/public/uploads/postindex.html): failed to open stream: HTTP wrapper does not support writeable connections
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://lo...', 'D:\\Coding\\Xampp...', 216, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\HTTP\Files\UploadedFile.php(216): fopen('http://localhos...', 'x+')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\HTTP\Files\UploadedFile.php(163): CodeIgniter\HTTP\Files\UploadedFile->setPath('http://localhos...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(49): CodeIgniter\HTTP\Files\UploadedFile->move('http://localhos...', 'thay-djoi-thong...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->postAdd()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-21 22:27:13 --> fopen(http://localhost/Codeigniter/public/uploads/postindex.html): failed to open stream: HTTP wrapper does not support writeable connections
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://lo...', 'D:\\Coding\\Xampp...', 216, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\HTTP\Files\UploadedFile.php(216): fopen('http://localhos...', 'x+')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\HTTP\Files\UploadedFile.php(163): CodeIgniter\HTTP\Files\UploadedFile->setPath('http://localhos...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(50): CodeIgniter\HTTP\Files\UploadedFile->move('http://localhos...', 'thay-djoi-thong...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->postAdd()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-21 22:33:41 --> Allowed fields must be specified for model: App\models\Post_Model
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Model.php(1265): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\models\\Post...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Model.php(735): CodeIgniter\Model->doProtectFields(Array)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(63): CodeIgniter\Model->insert(Array)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->postAdd()
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-07-21 22:37:14 --> Allowed fields must be specified for model: App\models\Post_Model
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Model.php(1265): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\models\\Post...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Model.php(735): CodeIgniter\Model->doProtectFields(Array)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(63): CodeIgniter\Model->insert(Array)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->postAdd()
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-07-21 22:47:23 --> Attempt to assign property 'post_image' of non-object
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to assi...', 'D:\\Coding\\Xampp...', 57, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->postAdd()
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-21 22:49:24 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-21 22:49:48 --> Call to a member function getClientExtension() on array
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->postAdd()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-07-21 22:53:05 --> syntax error, unexpected '$ext' (T_VARIABLE)
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}

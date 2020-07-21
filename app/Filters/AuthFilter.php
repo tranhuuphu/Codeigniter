@@ -21,7 +21,7 @@
 	    {
 	        $session = session();
 	        if($session->get('log') == TRUE){
-	        	return redirect()->to(base_url('admin/dashboard'));
+	        	return redirect()->to(base_url('admin/'));
 	        }
 	    }
 	}

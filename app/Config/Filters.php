@@ -22,7 +22,7 @@ class Filters extends BaseConfig
 		],
 		'after'  => [
 			'toolbar',
-			'authFilter' => ['except' => ['/admin/dashboard','/admin/*/*']],
+			'authFilter' => ['except' => ['*','/admin/*/*']],
 			//'honeypot'
 		],
 	];

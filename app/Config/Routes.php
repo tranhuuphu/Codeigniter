@@ -35,6 +35,9 @@ $routes->get('login', 'Login::index');
 
 $routes->group('admin', function($routes)
 {
+	$routes->get('dashboard', 'Dashboard::index');
+	$routes->get('/', 'Dashboard::index');
+
     $routes->get('login', 'Login::index');
     $routes->post('auth/login', 'Auth::login');
 
@@ -43,9 +46,22 @@ $routes->group('admin', function($routes)
 
     $routes->get('auth/logout', 'Auth::logout');
 
-    $routes->get('dashboard', 'Dashboard::index');
+    $routes->group('post', function($routes)
+	{
+		$routes->get('/', 'PostController::index');
+
+		$routes->get('add', 'PostController::getAdd');
+		$routes->post('add', 'PostController::postAdd');
+	});
+
+    
+
+
+
+    
 
 });
+
 
 /**
  * --------------------------------------------------------------------
