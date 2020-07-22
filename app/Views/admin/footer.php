@@ -82,6 +82,22 @@
             $('#img').click();
         });
     });
+
+    $('#summernote').summernote({
+      toolbar: [
+        ['style', ['style']],
+        ['font', ['bold', 'underline', 'italic', 'clear', 'strikethrough', 'superscript', 'subscript']],
+        ['fontsize', ['fontsize']],
+        ['fontname', ['fontname']],
+        ['color', ['color']],
+        // ['height', ['height']],
+        ['para', ['ul', 'ol', 'paragraph']],
+        ['table', ['table']],
+
+        ['insert', ['link', 'picture', 'video']],
+        ['view', ['fullscreen', 'codeview', 'help']],
+      ],
+    });
   </script>
 </body>
 </html>

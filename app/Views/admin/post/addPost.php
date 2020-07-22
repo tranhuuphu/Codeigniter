@@ -47,10 +47,27 @@
 	                    <textarea class="form-control" name="intro" rows="3" placeholder="Enter ..." maxlength="50"></textarea>
 	                  </div>
 
-	                  <div class="form-group">
+<!-- 	                  <div class="form-group">
 	                    <label>Nội Dung</label>
 	                    <textarea class="form-control" name="content" rows="3" placeholder="Enter ..."></textarea>
-	                  </div>
+	                  </div> -->
+
+
+				        <div class="form-group">
+				          <div class="card card-outline card-info">
+				            <div class="card-header">
+				            	<label>Nội Dung</label>
+				            </div>
+				            <!-- /.card-header -->
+				            <div class="card-body pad">
+				              <div class="">
+				                <textarea class="textarea" id="summernote" name="content" placeholder="Place some text here" style="width: 100%; height: 300px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+				              </div>
+
+				            </div>
+				          </div>
+				        </div>
+				        <!-- /.col-->
 
 	                  <div class="form-group">
 	                    <label>Meta Key</label>

@@ -6,6 +6,7 @@
   <title>AdminLTE 3 | Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="<?= base_url('/'); ?>/public/AdminLTE/plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
@@ -26,6 +27,9 @@
   <link rel="stylesheet" href="<?= base_url('/'); ?>/public/AdminLTE/plugins/summernote/summernote-bs4.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+
+  
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -66,7 +70,7 @@
     <!-- Brand Logo -->
     <a href="<?= base_url('/admin/dashboard') ?>" class="brand-link">
       
-      <span class="brand-text font-weight-light" style="text-align: center; margin-left: 33px;">AdminLTE 3</span>
+      <span class="brand-text font-weight-light text-center" style="text-align: center; margin-left: 33px;">Admin</span>
     </a>
 
     <!-- Sidebar -->
@@ -132,6 +136,31 @@
                 <a href="<?= base_url('/admin/post/add') ?>" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Add New Post</p>
+                </a>
+              </li>
+              
+            </ul>
+          </li>
+
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-plus-square"></i>
+              <p>
+                Cate
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview" style="border:1px solid red">
+              <li class="nav-item">
+                <a href="<?= base_url('/admin/cate') ?>" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>List Cate</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?= base_url('/admin/cate/add') ?>" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add New Cate</p>
                 </a>
               </li>
               

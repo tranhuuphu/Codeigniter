@@ -50,7 +50,7 @@
 
 	        
 
-			// dd($img_name);
+			dd($data);
 
 			$post->insert($data);
 

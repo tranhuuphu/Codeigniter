@@ -54,6 +54,14 @@ $routes->group('admin', function($routes)
 		$routes->post('add', 'PostController::postAdd');
 	});
 
+	$routes->group('cate', function($routes)
+	{
+		$routes->get('/', 'CateController::index');
+
+		$routes->get('add', 'CateController::getAdd');
+		$routes->post('add', 'CateController::postAdd');
+	});
+
     
 
 
