@@ -49,6 +49,11 @@
 <!-- AdminLTE for demo purposes -->
 <script src="<?= base_url('/'); ?>/public/AdminLTE/dist/js/demo.js"></script>
 
+<script src="<?= base_url('/'); ?>/public/AdminLTE/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="<?= base_url('/'); ?>/public/AdminLTE/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="<?= base_url('/'); ?>/public/AdminLTE/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="<?= base_url('/'); ?>/public/AdminLTE/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+
   <script>
     $('#calendar').datepicker({
     });
@@ -97,6 +102,15 @@
         ['insert', ['link', 'picture', 'video']],
         ['view', ['fullscreen', 'codeview', 'help']],
       ],
+    });
+
+
+    $(function () {
+      $("#example1").DataTable({
+        "responsive": true,
+        "autoWidth": false,
+      });
+
     });
   </script>
 </body>
