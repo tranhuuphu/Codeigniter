@@ -3,18 +3,27 @@
 
 	use CodeIgniter\Controller;
 	use App\Models\Post_Model;
+	use App\Models\Cate_Model;
 
 	class PostController extends Controller
 	{
 		protected $helpers = ['text'];
 
 		public function index(){
-			return view('admin/post/post');
+			$post = new Post_Model;
+			$data['post'] = $post->get()->getResult();
+			return view('admin/post/post', $data);
 		}
 
 		public function getAdd(){
 
-			return view('admin/post/addPost');
+			$cate = new Cate_Model;
+
+			$data['cate'] = $cate->get()->getResultArray();
+
+			// dd($data);
+
+			return view('admin/post/add', $data);
 		}
 
 		public function postAdd(){
@@ -50,7 +59,7 @@
 
 	        
 
-			dd($data);
+			// dd($data);
 
 			$post->insert($data);
 

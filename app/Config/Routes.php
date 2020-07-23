@@ -60,6 +60,12 @@ $routes->group('admin', function($routes)
 
 		$routes->get('add', 'CateController::getAdd');
 		$routes->post('add', 'CateController::postAdd');
+
+		$routes->get('edit/(:num)', 'CateController::getEdit/$1');
+		$routes->post('edit/(:num)', 'CateController::postEdit/$1');
+
+		$routes->get('delete/(:num)', 'CateController::delete/$1');
+		$routes->post('delete/(:num)', 'CateController::delete/$1');
 	});
 
     

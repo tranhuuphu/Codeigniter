@@ -10,7 +10,8 @@
           <div class="col-sm-12">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="<?= base_url('/admin/dashboard') ?>">Home</a></li>
-              <li class="breadcrumb-item active"><a href="<?= base_url('/admin/cate/add') ?>">Add Cate</a></li>
+              <li class="breadcrumb-item"><a href="<?= base_url('/admin/cate') ?>">Cate</a></li>
+              <li class="breadcrumb-item active">Add Cate</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->

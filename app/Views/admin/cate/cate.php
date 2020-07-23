@@ -26,50 +26,42 @@
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">DataTable with default features</h3>
+                <h3 class="card-title">Danh Mục Danh Sách Menu <a href="cate/add" class=""><i class="fas fa-plus"></i> Add New Cate</a></h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                   <tr>
-                    <th>Rendering engine</th>
-                    <th>Browser</th>
-                    <th>Platform(s)</th>
-                    <th>Engine version</th>
-                    <th>CSS grade</th>
+                    <th class="text-center">Order</th>
+                    <th class="text-center">Name</th>
+                    <th class="text-center">Status</th>
+                    <th class="text-center">Option</th>
                   </tr>
                   </thead>
                   <tbody>
-                  <tr>
-                    <td>Trident</td>
-                    <td>Internet
-                      Explorer 4.0
-                    </td>
-                    <td>Win 95+</td>
-                    <td> 4</td>
-                    <td>X</td>
-                  </tr>
+                    <?php foreach ($cate as $row): ?>
+                      <tr>
+                        <td><?php echo $row->cate_id; ?></td>
+                        <td><?php echo $row->cate_name; ?></td>
+                        <td><?php if($row->parent_cate_id == 0){echo 'Parent Cate';}else{echo 'Sub Cate';} ?></td>
+                        <td>
+                          <div class="row text-center">
+                            <a href="cate/edit/<?php echo $row->cate_id; ?>" class="btn btn-info mr-3 ml-5"><i class="far fa-edit"></i> Edit</a>
+                            <a href="cate/delete/<?php echo $row->cate_id; ?>" class="btn btn-danger"><i class="fas fa-trash"></i> Delete</a>
+                          </div>
+                        </td>
+                      </tr>
+                    <?php endforeach; ?>
                   
-
-
-
                   
-                  <tr>
-                    <td>Other browsers</td>
-                    <td>All others</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>U</td>
-                  </tr>
                   </tbody>
                   <tfoot>
                   <tr>
-                    <th>Rendering engine</th>
-                    <th>Browser</th>
-                    <th>Platform(s)</th>
-                    <th>Engine version</th>
-                    <th>CSS grade</th>
+                    <th class="text-center">Order</th>
+                    <th class="text-center">Name</th>
+                    <th class="text-center">Status</th>
+                    <th class="text-center">Option</th>
                   </tr>
                   </tfoot>
                 </table>

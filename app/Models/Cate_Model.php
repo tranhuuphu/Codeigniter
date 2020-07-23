@@ -18,14 +18,9 @@
 	    protected $useTimestamps = true;
 	    protected $createdField  = 'created_at';
 	    protected $updatedField  = 'updated_at';
-	    // protected $deletedField  = 'deleted_at';
+	    protected $deletedField  = 'deleted_at';
 
-	    public function all()
-	    {
-	        $cate_result = $this->db->query('SELECT * FROM cate')->get()->result_array();
 
-	        return $cate_result;
-	    }
 	}
 
 	

@@ -3,6 +3,8 @@
 	use CodeIgniter\model;
 
 	class Post_Model extends Model{
+
+		protected $DBGroup = 'default';
 		
 		protected $table = 'post';
 
