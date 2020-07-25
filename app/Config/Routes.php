@@ -52,6 +52,10 @@ $routes->group('admin', function($routes)
 
 		$routes->get('add', 'PostController::getAdd');
 		$routes->post('add', 'PostController::postAdd');
+
+		$routes->get('edit/(:num)', 'PostController::getEdit/$1');
+		$routes->post('edit/(:num)', 'PostController::postEdit/$1');
+		
 	});
 
 	$routes->group('cate', function($routes)
@@ -66,6 +70,20 @@ $routes->group('admin', function($routes)
 
 		$routes->get('delete/(:num)', 'CateController::delete/$1');
 		$routes->post('delete/(:num)', 'CateController::delete/$1');
+	});
+
+	$routes->group('page', function($routes)
+	{
+		$routes->get('/', 'PageController::index');
+
+		$routes->get('add', 'PageController::getAdd');
+		$routes->post('add', 'PageController::postAdd');
+
+		$routes->get('edit/(:num)', 'PageController::getEdit/$1');
+		$routes->post('edit/(:num)', 'PageController::postEdit/$1');
+
+		$routes->get('delete/(:num)', 'PageController::delete/$1');
+		$routes->post('delete/(:num)', 'PageController::delete/$1');
 	});
 
     

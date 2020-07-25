@@ -133,6 +133,10 @@
 	                      <div class="form-group">
 	                        <label>Lựa Chọn Menu</label>
 	                        <select class="form-control" name="cate">
+	                        	<?php foreach($cate as $key2): ?>
+                      				<?php $sub_cate[] = $key2['parent_cate_id']; ?>
+
+                      			<?php endforeach; ?>
 
 	                        	<?php foreach($cate as $key): ?>
 	                        		<?php if($key['parent_cate_id'] == 0): ?>
@@ -177,7 +181,7 @@
 	                  <div class="form-group" >
 	                  	<label for="exampleInputFile">Ảnh sản phẩm</label>
 						<input required type="file" name="image" id="img" class="input-group custom-file"  class="form-control hidden" onchange="changeImg(this)">
-						<img id="avatar" class="thumbnail" width="300px" src="img/new_seo-10-512.png">
+						<img id="avatar" class="thumbnail" width="300px" src="<?php echo base_url('public'); ?>/img/upload-cloud.png">
 	                  </div>
 
 

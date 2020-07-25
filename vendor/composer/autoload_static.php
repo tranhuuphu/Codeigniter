@@ -11,6 +11,8 @@ class ComposerStaticInit5bd1b98fc075b3622d393b51f876556b
         '7e9bd612cc444b3eed788ebbe46263a0' => __DIR__ . '/..' . '/laminas/laminas-zendframework-bridge/src/autoload.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '3917c79c5052b270641b5a200963dbc2' => __DIR__ . '/..' . '/kint-php/kint/init.php',
+        '74ed299072414d276bb7568fe71d5b0c' => __DIR__ . '/..' . '/tinify/tinify/lib/Tinify.php',
+        '9635627915aaea7a98d6d14d04ca5b56' => __DIR__ . '/..' . '/tinify/tinify/lib/Tinify/Exception.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -21,6 +23,10 @@ class ComposerStaticInit5bd1b98fc075b3622d393b51f876556b
         'W' => 
         array (
             'Webmozart\\Assert\\' => 17,
+        ),
+        'T' => 
+        array (
+            'Tinify\\' => 7,
         ),
         'S' => 
         array (
@@ -66,6 +72,10 @@ class ComposerStaticInit5bd1b98fc075b3622d393b51f876556b
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Tinify\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/tinify/tinify/lib/Tinify',
         ),
         'Symfony\\Polyfill\\Ctype\\' => 
         array (

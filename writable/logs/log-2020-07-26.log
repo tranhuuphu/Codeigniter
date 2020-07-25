@@ -1,0 +1,10 @@
+CRITICAL - 2020-07-26 00:03:30 --> Undefined variable: cate
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\admin\page\edit.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 139, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('admin/page/edit', Array, true)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PageController.php(84): view('admin/page/edit', Array)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PageController->getEdit('25')
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PageController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}

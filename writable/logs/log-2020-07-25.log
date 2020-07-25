@@ -1,0 +1,196 @@
+CRITICAL - 2020-07-25 21:24:49 --> Array to string conversion
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\admin\post\add.php(173): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\Coding\\Xampp...', 173, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('admin/post/add', Array, true)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(26): view('admin/post/add', Array)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->getAdd()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-25 22:19:09 --> syntax error, unexpected '(', expecting ';' or ','
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-25 22:31:18 --> Call to undefined method App\models\Post_Model::getResultArray
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(100): CodeIgniter\Model->__call('getResultArray', Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->getEdit('14')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-25 22:31:51 --> Call to undefined method App\models\Post_Model::getRow
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(100): CodeIgniter\Model->__call('getRow', Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->getEdit('14')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-25 22:32:45 --> Call to undefined method App\models\Post_Model::getResult
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(101): CodeIgniter\Model->__call('getResult', Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->getEdit('14')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-25 22:33:44 --> Call to undefined method App\models\Post_Model::getResult
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(101): CodeIgniter\Model->__call('getResult', Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->getEdit('14')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-25 22:33:45 --> Call to undefined method App\models\Post_Model::getResult
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(101): CodeIgniter\Model->__call('getResult', Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->getEdit('14')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-25 22:36:04 --> Cannot use object of type stdClass as array
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('admin/post/edit', Array, true)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(102): view('admin/post/edit', Array)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->getEdit('14')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-07-25 22:36:15 --> Undefined index: title
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\admin\post\edit.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\Coding\\Xampp...', 42, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('admin/post/edit', Array, true)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(102): view('admin/post/edit', Array)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->getEdit('14')
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-25 22:36:32 --> Undefined index: post_title
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\admin\post\edit.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\Coding\\Xampp...', 42, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('admin/post/edit', Array, true)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(102): view('admin/post/edit', Array)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->getEdit('14')
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-25 22:36:46 --> Trying to get property 'post_title' of non-object
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\admin\post\edit.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\Coding\\Xampp...', 42, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('admin/post/edit', Array, true)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(102): view('admin/post/edit', Array)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->getEdit('14')
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-25 22:38:32 --> Undefined property: stdClass::$content
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\admin\post\edit.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\Coding\\Xampp...', 60, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('admin/post/edit', Array, true)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(104): view('admin/post/edit', Array)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->getEdit('14')
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-25 22:40:18 --> syntax error, unexpected '}', expecting ';' or ','
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('admin/post/edit', Array, true)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(104): view('admin/post/edit', Array)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->getEdit('14')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-07-25 22:58:35 --> file_get_contents(public/upload/post/tiny-344-1595692715.): failed to open stream: Permission denied
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'D:\\Coding\\Xampp...', 9, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\vendor\tinify\tinify\lib\Tinify\Source.php(9): file_get_contents('public/upload/p...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\vendor\tinify\tinify\lib\Tinify.php(76): Tinify\Source::fromFile('public/upload/p...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(160): Tinify\fromFile('public/upload/p...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->postEdit('12')
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-25 23:33:44 --> Class 'App\Controllers\Cate_Model' not found
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PageController->getAdd()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PageController))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-07-25 23:33:48 --> Class 'App\Controllers\Post_Model' not found
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PageController->index()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PageController))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-07-25 23:33:53 --> Class 'App\Controllers\Cate_Model' not found
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PageController->getAdd()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PageController))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-07-25 23:34:19 --> Class 'App\Controllers\Cate_Model' not found
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PageController->getAdd()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PageController))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-07-25 23:34:42 --> Class 'App\Controllers\Cate_Model' not found
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PageController->getAdd()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PageController))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-07-25 23:36:17 --> Undefined variable: cate
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\admin\page\add.php(136): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 136, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('admin/page/add', Array, true)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PageController.php(26): view('admin/page/add', Array)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PageController->getAdd()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PageController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-25 23:41:06 --> Undefined property: stdClass::$post_id
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\admin\page\page.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\Coding\\Xampp...', 46, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('admin/page/page', Array, true)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PageController.php(15): view('admin/page/page', Array)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PageController->index()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PageController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-07-25 23:41:35 --> Undefined variable: cate
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PageController.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 83, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PageController->getEdit('11')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PageController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-25 23:58:48 --> Undefined variable: cate
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PageController.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 79, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PageController->getEdit('25')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PageController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-25 23:59:24 --> Undefined variable: post_info
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\admin\page\edit.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 24, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('admin/page/edit', Array, true)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PageController.php(84): view('admin/page/edit', Array)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PageController->getEdit('25')
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PageController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
