@@ -1,10 +1,11 @@
-<footer class="main-footer">
-    <strong>Copyright &copy; 2014-2020</strong>
+<!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; <?php echo date("Y"); ?></strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
       <b>Version</b> 3.0.5
     </div>
-</footer>
+  </footer>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
@@ -20,7 +21,7 @@
 <script src="<?= base_url('/'); ?>/public/AdminLTE/plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
-  // $.widget.bridge('uibutton', $.ui.button)
+  $.widget.bridge('uibutton', $.ui.button)
 </script>
 <!-- Bootstrap 4 -->
 <script src="<?= base_url('/'); ?>/public/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -49,27 +50,8 @@
 <!-- AdminLTE for demo purposes -->
 <script src="<?= base_url('/'); ?>/public/AdminLTE/dist/js/demo.js"></script>
 
-<script src="<?= base_url('/'); ?>/public/AdminLTE/plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="<?= base_url('/'); ?>/public/AdminLTE/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-<script src="<?= base_url('/'); ?>/public/AdminLTE/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-<script src="<?= base_url('/'); ?>/public/AdminLTE/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-
   <script>
-    $('#calendar').datepicker({
-    });
-    !function ($) {
-        $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
-            $(this).find('em:first').toggleClass("glyphicon-minus");      
-        }); 
-        $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
-    }(window.jQuery);
 
-    $(window).on('resize', function () {
-      if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
-    })
-    $(window).on('resize', function () {
-      if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
-    });
     function changeImg(input){
         //Nếu như tồn thuộc tính file, đồng nghĩa người dùng đã chọn file mới
         if(input.files && input.files[0]){
@@ -113,5 +95,3 @@
 
     });
   </script>
-</body>
-</html>

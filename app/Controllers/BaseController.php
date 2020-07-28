@@ -15,6 +15,8 @@ namespace App\Controllers;
  */
 
 use CodeIgniter\Controller;
+use App\Models\Cate_Model;
+use App\Models\Page_Model;
 
 class BaseController extends Controller
 {
@@ -26,7 +28,7 @@ class BaseController extends Controller
 	 *
 	 * @var array
 	 */
-	protected $helpers = ['validation', 'sis'];
+	protected $helpers = ['validation', 'sis', 'database'];
 
 	/**
 	 * Constructor.
@@ -41,6 +43,14 @@ class BaseController extends Controller
 		//--------------------------------------------------------------------
 		// E.g.:
 		// $this->session = \Config\Services::session();
+
+		$cate = new Cate_Model;
+		$data['cate_info'] = $cate->get()->getResultArray();
+
+		$page = new Page_Model;
+		$data['page_info'] = $page->get()->getResultArray();
+
+		return view('site/layout', $data);
 	}
 
 }

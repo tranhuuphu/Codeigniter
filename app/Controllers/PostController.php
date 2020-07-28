@@ -4,6 +4,7 @@
 	use CodeIgniter\Controller;
 	use App\Models\Post_Model;
 	use App\Models\Cate_Model;
+	use \Config\Services\session;
 
 
 	class PostController extends Controller
@@ -12,7 +13,11 @@
 
 		public function index(){
 			$post = new Post_Model;
-			$data['post'] = $post->get()->getResult();
+			$data['post'] = $post->where('deleted_at', Null)->get()->getResult();
+
+			$data['post_trash'] = $post->where('deleted_at !=', Null)->get()->getResult();
+
+			// dd($data['post_trash']);
 			return view('admin/post/post', $data);
 		}
 
@@ -57,7 +62,7 @@
 	        $data['post_image'] = $img_name;
 
 
-			// dd($data);
+			// dd($this->request->getPost('image2'));
 
 			$post->insert($data);
 
@@ -158,6 +163,70 @@
 			$data['session'] = session()->setFlashdata('notice', 'Thêm bài viết thành công');
 
 			return redirect()-> to(base_url('admin/post'), $data['session']);
+		}
+
+
+		public function remove($id){
+			$post = new Post_Model;
+
+
+			if($post->where('post_id', $id)->delete()){
+
+
+				$data['session'] = session()->setFlashdata('notice', 'Xóa bài thành công');
+				return redirect()-> to(base_url('admin/post'), $data['session']);
+			}
+
+			$data['session'] = session()->setFlashdata('notice', 'Có lỗi');
+
+			return redirect()-> to(base_url('admin/post'), $data['session']);
+
+
+			
+		}
+
+		public function delete($id){
+			$post = new Post_Model;
+
+			// dd($id);
+			
+
+			$post_info = $post->where('post_id', $id)->get()->getRow();
+
+			if(is_file('public/upload/post/'.$post_info->post_image) && file_exists('public/upload/post/'.$post_info->post_image)){
+	        	unlink('public/upload/post/'.$post_info->post_image);
+        		
+        	}
+
+        	$post->where('post_id', $id)->purgeDeleted();
+			
+
+			$data['session'] = session()->setFlashdata('notice', 'Xóa bài thành công');
+			return redirect()-> to(base_url('admin/post'), $data['session']);
+			
+
+
+			
+		}
+
+		public function restore($id){
+
+			$post = new Post_Model;
+
+			$post->where('post_id', $id)->get()->getResultArray();
+
+
+			$post->where('post_id', $id)->set('deleted_at', NULL, true)->protect(false)->update();
+
+
+			$data['session'] = session()->setFlashdata('notice', 'Restore bài viết thành công');
+
+			// dd($session);
+			return redirect()-> to(base_url('admin/post'), $data['session']);
+		
+
+
+			
 		}
 
 		

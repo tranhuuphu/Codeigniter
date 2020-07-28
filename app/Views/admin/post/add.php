@@ -181,7 +181,7 @@
 	                  <div class="form-group" >
 	                  	<label for="exampleInputFile">Ảnh sản phẩm</label>
 						<input required type="file" name="image" id="img" class="input-group custom-file"  class="form-control hidden" onchange="changeImg(this)">
-						<img id="avatar" class="thumbnail" width="300px" src="<?php echo base_url('public'); ?>/img/upload-cloud.png">
+						<img id="avatar" name="image2" class="thumbnail" width="300px" src="<?php echo base_url('public'); ?>/img/upload-cloud.png">
 	                  </div>
 
 

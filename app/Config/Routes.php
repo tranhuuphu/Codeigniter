@@ -16,7 +16,7 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php'))
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
+$routes->setDefaultController('HomeController');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -30,7 +30,9 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+$routes->get('/', 'HomeController::index');
+
+
 $routes->get('login', 'Login::index');
 
 $routes->group('admin', function($routes)
@@ -55,6 +57,14 @@ $routes->group('admin', function($routes)
 
 		$routes->get('edit/(:num)', 'PostController::getEdit/$1');
 		$routes->post('edit/(:num)', 'PostController::postEdit/$1');
+
+		$routes->get('move/(:num)', 'PostController::remove/$1');
+
+		$routes->get('delete/(:num)', 'PostController::delete/$1');
+		$routes->post('delete/(:num)', 'PostController::delete/$1');
+
+		$routes->get('restore/(:num)', 'PostController::restore/$1');
+		$routes->post('restore/(:num)', 'PostController::restore/$1');
 		
 	});
 
