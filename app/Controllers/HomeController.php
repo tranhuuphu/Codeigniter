@@ -30,17 +30,19 @@ class HomeController extends BaseController
 				}
 			}
 			// dd($sub_id);
-			if($sub_id != NULL){
-				$post_cate = $post->join('cate', 'cate.cate_id = post.post_cate_id', 'left')->orderBy('post_id', 'DESC')->whereIn('post_cate_id', $sub_id)->limit(5)->get()->getResultArray();
+			if(isset($sub_id) && $sub_id != NULL){
+				$post_cate[] = $post->join('cate', 'cate.cate_id = post.post_cate_id', 'left')->orderBy('post_id', 'DESC')->whereIn('post_cate_id', $sub_id)->limit(5)->get()->getResultArray();
+				unset($sub_id);
 			}else{
-				$post_cate = $post->join('cate', 'cate.cate_id = post.post_cate_id', 'left')->orderBy('post_id', 'DESC')->where('post_cate_id', $key['cate_id'])->limit(5)->get()->getResultArray();
+				$post_cate[] = $post->join('cate', 'cate.cate_id = post.post_cate_id', 'left')->orderBy('post_id', 'DESC')->where('post_cate_id', $key['cate_id'])->limit(5)->get()->getResultArray();
 			}
-			dd($post_cate);
+			// dd($post_cate);
 
 			
 
 
 		}
+		// dd($post_cate);
 
 		$data['cate_all'] = $cate_all;
 		$data['post_cate'] = $post_cate;
@@ -52,6 +54,28 @@ class HomeController extends BaseController
 
 		return view('site/home', $data);
 
+	}
+
+	public function catePost($slug){
+		$post = new Post_Model;
+
+		$cate = new Cate_Model;
+
+		$cate_info = $cate->where('cate_slug', $slug)->get()->getRow();
+		// var_dump($cate_info);
+		$id_sub = $cate_info->cate_id;
+		if($cate_info->parent_cate_id == 0){
+			$cate_sub = $cate->where('parent_cate_id', $id_sub)->get()->getResultArray();
+		}
+		dd($cate_sub);
+		// dd(count($cate_sub));
+		if(count($cate_sub) == 0){
+			// dd(1);
+		}else{
+			// dd(2);
+		}
+
+		return view('site/post_cate');
 	}
 
 	

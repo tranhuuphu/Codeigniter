@@ -104,12 +104,12 @@
         <div class="container">
           <div class="row d-flex no-gutters align-items-stretch">
             <style type="text/css">
-              h2 {
+              .liner {
                 display: flex;
                 align-items: center;
               }
-
-              h2::after {
+              .liner a{font-size: 22px;}
+              .liner::after {
                 content: '';
                 flex: 1;
                 margin-left: 1rem;
@@ -123,12 +123,17 @@
 
                   <?php $post_slice = array_slice($value,0,1); $post_i = array_shift($value); //dd($value); ?>
 
-                  <?php foreach($cate_all as $key): ?>
-                    <?php foreach($post_slice as $row): ?>
-                      <?php if($key['cate_id']==$row['post_cate_id']): ?>
-                        <h2><a href="<?= $key['cate_slug']; ?>" title="<?= $key['cate_name']; ?>"><?= $key['cate_name']; ?></a></h2>
-                      <?php endif; ?>
-                    <?php endforeach; ?>
+                  
+                  <?php foreach($post_slice as $row): ?>
+                    <?php if($row['parent_cate_id'] == 0): ?>
+                      <div class="liner"><a href="<?= $row['cate_slug']; ?>" title="<?= $row['cate_name']; ?>"><?= $row['cate_name']; ?></a></div>
+                    <?php elseif($row['parent_cate_id'] != 0): ?>
+                      <?php foreach($cate_all as $key): ?>
+                        <?php if($key['cate_id'] == $row['parent_cate_id']): ?>
+                          <div class="liner"><a href="<?= $key['cate_slug']; ?>" title="<?= $key['cate_name']; ?>"><?= $key['cate_name']; ?></a></div>
+                        <?php endif; ?>
+                      <?php endforeach; ?>
+                    <?php endif; ?>
                   <?php endforeach; ?>
                   
 
@@ -152,7 +157,7 @@
                     <div class="col-md-6">
                       <?php foreach($value as $row): ?>
                         <h1 class="mt-0" style="font-size: 20px; "><a href="<?= base_url('/'.$row['cate_slug'].'/'.$row['post_slug'].'-'.$row['post_id'].'.html') ?>" title="<?= $row['post_title']; ?>" class="text-black"><?= $row['post_title']; ?></a></h1>
-                        <div class="media">
+                        <div class="media" class="mb-3">
 
                           <img width='35%' src="<?= base_url('public/upload/post'.'/'.$row['post_image']) ?>" class="align-self-start mr-3 mt-2" alt="<?= $row['post_title']; ?>">
                           <div class="media-body" >
@@ -167,33 +172,6 @@
                   <hr>
                   
               <?php endforeach; ?>
-
-<!--               <h2 class=""><a href="">Heading</a></h2>
-              <div class="row mb-4 mt-3">
-
-                <div class="col-md-6">
-                  <div class="card" style="">
-                    <img src="https://curie.vn/public/upload/post/in-bao-bi-xm3aIS.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title"><a href="" class="text-black">Card title</a></h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <h1 class="mt-0" style="font-size: 20px; "><a href="" class="text-black">Top-aligned media</a></h1>
-                  <div class="media">
-
-                    <img width='35%' src="https://baobinhphuoc.com.vn/Content/UploadFiles/EditorFiles/images/2019/Quy1/5218012019085212.jpg" class="align-self-start mr-3 mt-2" alt="...">
-                    <div class="media-body" >
-                      <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, </p>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
-
             </div>
 
             
@@ -210,37 +188,6 @@
                 <li>Quo, adipisci, quis.</li>
                 <li>Cumque perspiciatis, blanditiis?</li>
               </ul>
-
-              
-            </div>
-
-          </div>
-        </div>      
-      </div>
-
-
-      <div class="block__73694">
-        <div class="container">
-          <div class="row d-flex no-gutters align-items-stretch">
-
-            <div class="col-12 col-lg-6 block__73422 order-lg-2" style="background-image: url('images/img_2.jpg');" data-aos="fade-left" data-aos-delay="">
-            </div>
-
-            
-
-            <div class="col-lg-5 mr-auto p-lg-5 mt-4 mt-lg-0 order-lg-1" data-aos="fade-right" data-aos-delay="">
-              <h2 class="mb-3 text-black">Surface Mining</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus id dignissimos nemo minus perspiciatis ullam itaque voluptas iure vero, nesciunt unde odit aspernatur distinctio, maiores facere officiis. Cum, esse, iusto?</p>
-
-              <p>Minus perspiciatis ullam itaque voluptas iure vero, nesciunt unde odit aspernatur distinctio, maiores facere officiis. Cum, esse, iusto?</p>
-
-              <ul class="ul-check primary list-unstyled mt-5">
-                <li>Lorem ipsum dolor.</li>
-                <li>Quod, amet. Provident.</li>
-                <li>Quo, adipisci, quis.</li>
-                <li>Cumque perspiciatis, blanditiis?</li>
-              </ul>
-
             </div>
 
           </div>
@@ -253,16 +200,7 @@
 
     <div class="site-section bg-dark" id="about-section">
       <div class="container">
-        <div class="row justify-content-center mb-4 block-img-video-1-wrap">
-          <div class="col-md-12 mb-5">
-            <figure class="block-img-video-1" data-aos="fade">
-              <a href="https://vimeo.com/45830194" data-fancybox data-ratio="2">
-                <span class="icon"><span class="icon-play"></span></span>
-                <img src="images/hero_1.jpg" alt="Image" class="img-fluid">
-              </a>
-            </figure>
-          </div>
-        </div>
+
         <div class="row">
           <div class="col-12">
             <div class="row">

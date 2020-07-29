@@ -32,6 +32,8 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'HomeController::index');
 
+$routes->get('(:any)', 'HomeController::catePost/$1');
+
 
 $routes->get('login', 'Login::index');
 
@@ -96,11 +98,6 @@ $routes->group('admin', function($routes)
 		$routes->post('delete/(:num)', 'PageController::delete/$1');
 	});
 
-    
-
-
-
-    
 
 });
 
