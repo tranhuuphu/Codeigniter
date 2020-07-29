@@ -18,10 +18,27 @@ class HomeController extends BaseController
 
 		$data['featured'] = $post->join('cate', 'cate.cate_id = post.post_cate_id', 'left')->orderBy('post_id', 'DESC')->where('post_featured', 1)->limit(4)->get()->getResultArray();
 
-		$cate_all = $cate->get()->getResultArray();
+		$cate_all = $cate->where('parent_cate_id', 0)->get()->getResultArray();
+		$cate_2 = $cate->get()->getResultArray();
 
 		foreach($cate_all as $key){
-			$post_cate[] = $post->join('cate', 'cate.cate_id = post.post_cate_id', 'left')->orderBy('post_id', 'DESC')->where('post_cate_id', $key['cate_id'])->limit(5)->get()->getResultArray();
+			$id = $key['cate_id'];
+			foreach($cate_2 as $row){
+				if($row['parent_cate_id'] == $id){
+					// $sub_id = array();
+					$sub_id[] = $row['cate_id'];
+				}
+			}
+			// dd($sub_id);
+			if($sub_id != NULL){
+				$post_cate = $post->join('cate', 'cate.cate_id = post.post_cate_id', 'left')->orderBy('post_id', 'DESC')->whereIn('post_cate_id', $sub_id)->limit(5)->get()->getResultArray();
+			}else{
+				$post_cate = $post->join('cate', 'cate.cate_id = post.post_cate_id', 'left')->orderBy('post_id', 'DESC')->where('post_cate_id', $key['cate_id'])->limit(5)->get()->getResultArray();
+			}
+			dd($post_cate);
+
+			
+
 
 		}
 
