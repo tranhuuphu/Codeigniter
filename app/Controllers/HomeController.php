@@ -57,25 +57,50 @@ class HomeController extends BaseController
 	}
 
 	public function catePost($slug){
+		
 		$post = new Post_Model;
 
 		$cate = new Cate_Model;
 
-		$cate_info = $cate->where('cate_slug', $slug)->get()->getRow();
-		// var_dump($cate_info);
-		$id_sub = $cate_info->cate_id;
-		if($cate_info->parent_cate_id == 0){
-			$cate_sub = $cate->where('parent_cate_id', $id_sub)->get()->getResultArray();
-		}
-		dd($cate_sub);
-		// dd(count($cate_sub));
-		if(count($cate_sub) == 0){
-			// dd(1);
-		}else{
-			// dd(2);
-		}
+		$cate_detail = $cate->where('cate_slug', $slug)->get()->getRow();
 
-		return view('site/post_cate');
+
+		if(!$cate_detail || $cate_detail == null){
+            return view('errors/404');
+        }
+        
+
+		$cate_id = $cate_detail->cate_id;
+		$cate_slug = $cate_detail->cate_slug;
+		$cate_title = $cate_detail->cate_name;
+		// dd($cate_slug);
+        $cate_parent = $cate_detail->parent_cate_id;
+
+        if($cate_parent == 0){
+            $cate_sub_id = $cate->where('parent_cate_id', $cate_id)->get()->getResultArray();
+            if($cate_sub_id != null){
+                foreach($cate_sub_id as $c_s){
+                    $cate_sub_array[] = $c_s['cate_id'];
+                }
+                $post_cate = $post->whereIn('post_cate_id', $cate_sub_array)->orderBy('post_id', 'desc')->paginate(4);
+            }else{
+                $post_cate = $post->where('post_cate_id', $cate_id)->orderBy('post_id', 'desc')->paginate(4);
+            }
+        }else{
+            $post_cate = $post->where('post_cate_id', $cate_id)->orderBy('post_id', 'desc')->paginate(4);
+            
+        }
+        // dd($post_cate);
+        // $data['post_cate'] = $post_cate;
+        // $data['cate_detail'] = $cate_detail;
+        $data['cate_slug'] = $cate_slug;
+        $data = [
+            'post_cate'     	=> $post_cate,
+            'cate_detail'     	=> $cate_detail,
+            'pager'     		=> $post->pager,
+        ];
+
+		return view('site/post_cate', $data);
 	}
 
 	

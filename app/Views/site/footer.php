@@ -23,7 +23,7 @@
           </div>
           <div class="col-md-4 ml-auto">
 
-            <div class="mb-5">
+            <div class="">
               <h2 class="footer-heading mb-4">Subscribe to Newsletter</h2>
               <form action="#" method="post" class="footer-suscribe-form">
                 <div class="input-group mb-3">

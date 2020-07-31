@@ -1,0 +1,143 @@
+CRITICAL - 2020-07-30 23:05:21 --> Trying to get property 'cate_id' of non-object
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\Coding\\Xampp...', 66, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->catePost('upload', 'post', 'tiny-1595692791...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-30 23:05:21 --> Trying to get property 'cate_id' of non-object
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\Coding\\Xampp...', 66, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->catePost('upload', 'post', 'test-bai-viet-t...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-30 23:05:21 --> Trying to get property 'cate_id' of non-object
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\Coding\\Xampp...', 66, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->catePost('upload', 'post', 'bai-viet-test-2...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-30 23:05:21 --> Trying to get property 'cate_id' of non-object
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\Coding\\Xampp...', 66, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->catePost('images', 'person_1.jpg')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-30 23:05:21 --> Trying to get property 'cate_id' of non-object
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\Coding\\Xampp...', 66, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->catePost('images', 'person_2.jpg')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-30 23:05:21 --> Trying to get property 'cate_id' of non-object
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\Coding\\Xampp...', 66, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->catePost('images', 'person_4.jpg')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-30 23:05:21 --> Trying to get property 'cate_id' of non-object
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\Coding\\Xampp...', 66, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->catePost('images', 'hero_2.jpg')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-30 23:05:21 --> Trying to get property 'cate_id' of non-object
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\Coding\\Xampp...', 66, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->catePost('images', 'hero_3.jpg')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-30 23:05:22 --> Trying to get property 'cate_id' of non-object
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\Coding\\Xampp...', 66, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->catePost('images', 'person_3.jpg')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-30 23:05:22 --> Trying to get property 'cate_id' of non-object
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\Coding\\Xampp...', 66, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->catePost('upload', 'post', 'bai-viet-test-2...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-30 23:05:22 --> Trying to get property 'cate_id' of non-object
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\Coding\\Xampp...', 66, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->catePost('images', 'person_4.jpg')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-30 23:05:22 --> Trying to get property 'cate_id' of non-object
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\Coding\\Xampp...', 66, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->catePost('upload', 'post', 'chnh-thc-xa-s-d...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-30 23:05:22 --> Trying to get property 'cate_id' of non-object
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\Coding\\Xampp...', 66, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->catePost('images', 'person_2.jpg')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-30 23:05:22 --> Trying to get property 'cate_id' of non-object
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\Coding\\Xampp...', 66, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->catePost('images', 'person_1.jpg')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-30 23:05:22 --> Trying to get property 'cate_id' of non-object
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\Coding\\Xampp...', 66, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->catePost('images', 'person_3.jpg')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-07-30 23:34:51 --> Unknown column 'post_cate_id' in 'where clause'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT COUNT(*)...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseBuilder.php(1952): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\Model.php(1673): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Model.php(1176): CodeIgniter\Model->countAllResults(false)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(82): CodeIgniter\Model->paginate(10)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->catePost('in-offset')
+#8 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-07-30 23:36:06 --> Unknown column 'post_cate_id' in 'where clause'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT COUNT(*)...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseBuilder.php(1952): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\Model.php(1673): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Model.php(1176): CodeIgniter\Model->countAllResults(false)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(82): CodeIgniter\Model->paginate(10)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->catePost('in-offset')
+#8 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-07-30 23:36:27 --> Call to a member function get() on array
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->catePost('in-offset')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-07-30 23:36:49 --> Call to a member function getResultArray() on array
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->catePost('in-offset')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
