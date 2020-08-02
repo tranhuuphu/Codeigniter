@@ -102,6 +102,48 @@ class HomeController extends BaseController
 
 		return view('site/post_cate', $data);
 	}
+	public function getDetailPost($cate_slug, $slug){
+		
+		$post = new Post_Model;
+		$cate = new Cate_Model;
+
+		$array = explode('-', $slug);
+		$post_id = array_pop($array);
+
+		// dd($array);
+
+		$slug2 = implode('-', $array);
+
+		// dd($slug2);
+		
+
+		
+
+		$post_info = $post->where('post_id', $post_id)->get()->getRow();
+
+		$cate_id = $post_info->post_cate_id;
+
+		$cate_detail = $cate->where('cate_id', $cate_id)->get()->getRow();
+
+		if($cate_detail == null && !isset($cate_id)){
+			return redirect()->to(base_url().'/uncategory/'.$post_info->post_slug.'-'.$post_info->post_id.'.html');
+		}
+		// dd($post_info->post_slug != $slug);
+		if($cate_detail->cate_slug != $cate_slug || $post_info->post_slug != $slug2){
+			return redirect()->to(base_url('').'/'.$cate_detail->cate_slug.'/'.$post_info->post_slug.'-'.$post_info->post_id.'.html');
+		}
+
+		$data['related'] = $post->join('cate', 'cate.cate_id = post.post_cate_id', 'left')->orderBy('post_id', 'DESC')->groupStart()->where('post_cate_id', $cate_id)->where('post_id !=', $post_id)->groupEnd()->limit(6)->get()->getResultArray();
+		
+
+		$data['cate_detail'] = $cate_detail;
+		$data['post_info'] = $post_info;
+
+
+		return view('site/post_detail', $data);
+
+		
+	}
 
 	
 

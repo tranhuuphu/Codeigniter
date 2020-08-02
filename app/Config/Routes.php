@@ -30,9 +30,7 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'HomeController::index');
 
-$routes->get('(:any)', 'HomeController::catePost/$1');
 
 
 $routes->get('login', 'Login::index');
@@ -100,6 +98,12 @@ $routes->group('admin', function($routes)
 
 
 });
+
+$routes->get('/', 'HomeController::index');
+
+$routes->get('(:any)/(:any).html', 'HomeController::getDetailPost/$1/$2');
+
+$routes->get('(:any)', 'HomeController::catePost/$1');
 
 
 /**

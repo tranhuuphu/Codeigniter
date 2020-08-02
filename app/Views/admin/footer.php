@@ -43,6 +43,8 @@
 <script src="<?= base_url('/'); ?>/public/AdminLTE/plugins/summernote/summernote-bs4.min.js"></script>
 <!-- overlayScrollbars -->
 <script src="<?= base_url('/'); ?>/public/AdminLTE/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- Tag Input -->
+<script src="<?= base_url('/'); ?>/public/AdminLTE/plugins/tag-input/jquery.amsify.suggestags.js"></script>
 <!-- AdminLTE App -->
 <script src="<?= base_url('/'); ?>/public/AdminLTE/dist/js/adminlte.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
@@ -93,5 +95,8 @@
         "autoWidth": false,
       });
 
+    });
+    $('input[name="tag_input"]').amsifySuggestags({
+      type : 'bootstrap'
     });
   </script>

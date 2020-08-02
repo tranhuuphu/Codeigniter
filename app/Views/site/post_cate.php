@@ -2,15 +2,7 @@
 
 <?= $this->section('main_content') ?>
 <style type="text/css">
-    .pb-100 {
-    	padding-bottom: 100px;
-    }
-    .pt-100 {
-    	padding-top: 100px;
-    }
-    .mb-100 {
-    	margin-bottom: 100px;
-    }
+
     a {
     	text-decoration: none;
     	color: #333;
@@ -182,7 +174,7 @@
 	                 </div>
 	                 <div class="blog-content">
 	                    <div class="blog-title">
-	                       <h4><a href="<?= $cate_detail->cate_slug.'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title="<?= $key['post_title']; ?>"><?= $key['post_title']; ?></a></h4>
+	                       <h4><a href="<?= base_url().'/'.$cate_detail->cate_slug.'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title="<?= $key['post_title']; ?>"><?= $key['post_title']; ?></a></h4>
 <!-- 	                       <div class="meta">
 	                          <ul>
 	                             <li>04 June 2018</li>
@@ -190,7 +182,7 @@
 	                       </div> -->
 	                    </div>
 	                    <p><?= $key['post_intro']; ?></p>
-	                    <a href="<?= $cate_detail->cate_slug.'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title="<?= $key['post_title']; ?>" class="box_btn">Read more</a>
+	                    <a href="<?= base_url().'/'.$cate_detail->cate_slug.'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title="<?= $key['post_title']; ?>" class="box_btn">Read more</a>
 	                 </div>
 	              </div>
 	            </div>
@@ -205,7 +197,7 @@
         				<div class="media">
 						  <img src="https://media1.nguoiduatin.vn/media/nguyen-hoang-yen/2018/08/25/nhaphuongtruonggianglamgisauledinhhon.jpg" class="mr-3" alt="<?= $key['post_title']; ?>" width="35%">
 						  <div class="media-body">
-						    <h5 class="mt-0"><a href="<?= $cate_detail->cate_slug.'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title="<?= $key['post_title']; ?>"><?= $key['post_title']; ?></a></h5>
+						    <h5 class="mt-0"><a href="<?= base_url().'/'.$cate_detail->cate_slug.'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title="<?= $key['post_title']; ?>"><?= $key['post_title']; ?></a></h5>
 						    <?= $key['post_intro']; ?>.
 						  </div>
 						</div>

@@ -10,7 +10,7 @@
 	    public function before(RequestInterface $request, $arguments = null)
 	    {
 	        $session = session();
-	        if($session->get('log') != TRUE){
+	        if($session->get('log') == False){
 	        	return redirect()->to(base_url('admin/login'));
 	        }
 	    }

@@ -49,10 +49,12 @@
 				'post_intro' => $this->request->getPost('intro'),
 				'post_featured'=> $this->request->getPost('featured'),
 				'post_content' => $this->request->getPost('content'),
+				'post_tag' => $this->request->getPost('tag_input'),
 				'post_view' => 0,
 				'meta_key' => $this->request->getPost('meta_key'),
 				'meta_desc' => $this->request->getPost('meta_desc'),
 			);
+			// dd($this->request->getPost('tag_input'));
 
 			$img = $this->request->getFile('image');
 			$ext = $img->getClientExtension();

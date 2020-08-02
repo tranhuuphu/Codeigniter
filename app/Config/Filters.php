@@ -16,7 +16,8 @@ class Filters extends BaseConfig
 	// Always applied before every request
 	public $globals = [
 		'before' => [
-			'authFilter' => ['except' => ['/', '/*', 'admin/login','admin/auth/*']],
+			'authFilter' => ['except' => ['/*', 'admin/login','admin/auth/*', '/']],
+			// 'authFilter' => ['except' => ['/', '/*', 'admin/login','admin/auth/*']],
 			//'honeypot'
 			// 'csrf',
 		],

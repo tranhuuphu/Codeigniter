@@ -50,6 +50,7 @@ class BaseController extends Controller
 		$page = new Page_Model;
 		$data['page_info'] = $page->get()->getResultArray();
 
+
 		return view('site/layout', $data);
 	}
 

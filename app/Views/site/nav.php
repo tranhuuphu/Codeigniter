@@ -21,7 +21,9 @@
 
             <div class="float-right">
             <?php foreach($page_info as $row): ?>
-              <a href="<?php echo $row['page_slug']; ?>.html" title="<?= $row['page_title']; ?>" class="text-white pr-3"> <span class="d- d-md-inline-block"><?= $row['page_title']; ?></span></a>
+              <?php if($row['page_status'] != 1): ?>
+                <a href="<?php echo base_url().'/'.$row['page_slug']; ?>.html" title="<?= $row['page_title']; ?>" class="text-white pr-3"> <span class="d- d-md-inline-block"><?= $row['page_title']; ?></span></a>
+              <?php endif; ?>
             <?php endforeach; ?>
 
             </div>

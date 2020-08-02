@@ -1,0 +1,314 @@
+CRITICAL - 2020-08-01 18:15:03 --> Cannot use object of type stdClass as array
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getDetailPost('thang-con', 'co-the-ban-chua...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-01 18:21:20 -->  route cannot be found while reverse-routing.
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(128): redirect('http://localhos...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getDetailPost('thang-con', 'co-the-ban-chua...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-01 18:22:08 -->  route cannot be found while reverse-routing.
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(128): redirect('http://localhos...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getDetailPost('thang-con', 'co-the-ban-chua...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-01 18:22:09 -->  route cannot be found while reverse-routing.
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(128): redirect('http://localhos...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getDetailPost('thang-con', 'co-the-ban-chua...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-01 18:22:09 -->  route cannot be found while reverse-routing.
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(128): redirect('http://localhos...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getDetailPost('thang-con', 'co-the-ban-chua...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-01 18:22:09 -->  route cannot be found while reverse-routing.
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(128): redirect('http://localhos...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getDetailPost('thang-con', 'co-the-ban-chua...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-01 18:22:09 -->  route cannot be found while reverse-routing.
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\HTTP\RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(845): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(128): redirect('http://localhos...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getDetailPost('thang-con', 'co-the-ban-chua...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-01 18:22:57 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ';'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-01 18:24:11 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ';'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-01 18:47:46 --> Class 'App\Controllers\Post_Model' not found
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(891): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-01 18:48:59 --> Class 'App\Controllers\Post_Model' not found
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(891): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-01 19:03:45 --> Trying to get property 'post_cate_id' of non-object
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\Coding\\Xampp...', 124, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getDetailPost('thang-con', 'thang-con', '-13')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-01 19:03:56 --> Trying to get property 'post_cate_id' of non-object
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\Coding\\Xampp...', 124, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getDetailPost('thang-con', 'thang-con', 'co-the-ban-chua...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-01 19:04:47 --> Trying to get property 'post_cate_id' of non-object
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\Coding\\Xampp...', 124, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getDetailPost('thang-con', 'thang-con', 'co-the-ban-chua...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-01 19:31:05 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-01 19:41:05 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-01 19:42:31 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-01 19:46:29 --> Trying to get property 'post_cate_id' of non-object
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\Coding\\Xampp...', 124, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getDetailPost('thang-con', 'thang-con', '-4')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-01 21:42:00 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-01 21:42:39 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-01 21:43:36 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-01 21:46:35 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-01 21:47:22 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-01 21:48:08 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-01 21:49:43 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-01 22:38:29 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')
+ORDER BY `post_id` DESC
+ LIMIT 5' at line 6
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT *\nFROM `...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\Model.php(1818): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(136): CodeIgniter\Model->__call('get', Array)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getDetailPost('thang-con', '-13')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#8 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-08-01 22:58:26 --> Trying to get property 'cate_slug' of non-object
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\site\post_detail.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\Coding\\Xampp...', 32, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('site/post_detai...', Array, true)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(143): view('site/post_detai...', Array)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getDetailPost('thang-con', '-13')
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-01 23:05:27 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-01 23:34:04 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-01 23:45:07 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-01 23:45:09 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-01 23:45:45 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-01 23:46:07 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-01 23:47:46 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('D:\\Coding\\Xampp...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(869): class_exists('\\App\\Controller...', true)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
