@@ -5,13 +5,16 @@
 
 	use CodeIgniter\Controller;
 	use App\Models\User;
-	use App\Models\AuthModel;
+	use App\Models\Auth_Model;
 
 	class Auth extends Controller
 	{
 		// public function index(){
 		// 	return view('admin/login/login');
 		// }
+		public function __construct() {
+	        $this->auth = new Auth_Model;
+	    }
 
 		public function register(){
 			$validate = $this->validate(
@@ -42,42 +45,44 @@
 		}
 
 		public function login(){
-			$userModel = new AuthModel;
+			$userModel = new Auth_Model;
 			$table = 'users';
 			$email = $this->request->getPost('email');
-			// $password = password_hash($this->request->getPost('password'), PASSWORD_BCRYPT);
 			$password = $this->request->getPost('password');
 			$rowId = $userModel->get_data_login($email, $table);
 			// dd($password);
+
+
 			if($rowId == null){
 				session()->setFlashdata('notice', 'Email hoặc Password không đúng');
-				return redirect()->to(base_url('admin/login'));
+				return redirect()->to(base_url('auth/login'));
 			}
 			if(password_verify($password, $rowId->password))
 			{
-				$data = array(
-					'log' => TRUE,
-					'name' => $rowId->name,
-					'email' => $rowId->email,
-					'id' => $rowId->id,
+				session()->set("id", $rowId->id);
+	            session()->set("name", $rowId->name);
+	            session()->set("email", $rowId->email);
+	            session()->set("password", $rowId->password);
+	 
+	            return redirect()->to(base_url('admin/'));
 
-
-				);
-				session()->set($data);
 				session()->setFlashdata('notice', 'Đăng nhập thành công');
 				return redirect()->to(base_url('admin/dashboard'));
-			}
-			session()->setFlashdata('notice', 'Password không đúng');
-			return redirect()->to(base_url('admin/login'));
-		}
+			}else{
+	         	session()->setFlashdata('notice', 'Password không đúng');
+	            return redirect()->to(base_url('auth/login'));
+	        }
 
-		public function logout(){
-			$session = session();
-			$session->destroy();
-			session()->setFlashdata('notice', 'Bạn đã đăng xuất');
-			return redirect()->to(base_url('admin/login'));
+			
 
 		}
+
+
+		public function logout()
+	    {
+	        session()->destroy();
+	        return redirect()->to(base_url('auth/login'));
+	    }
 
 	}
 

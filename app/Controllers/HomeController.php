@@ -82,12 +82,12 @@ class HomeController extends BaseController
                 foreach($cate_sub_id as $c_s){
                     $cate_sub_array[] = $c_s['cate_id'];
                 }
-                $post_cate = $post->whereIn('post_cate_id', $cate_sub_array)->orderBy('post_id', 'desc')->paginate(4);
+                $post_cate = $post->whereIn('post_cate_id', $cate_sub_array)->orderBy('post_id', 'desc')->paginate(11);
             }else{
-                $post_cate = $post->where('post_cate_id', $cate_id)->orderBy('post_id', 'desc')->paginate(4);
+                $post_cate = $post->where('post_cate_id', $cate_id)->orderBy('post_id', 'desc')->paginate(11);
             }
         }else{
-            $post_cate = $post->where('post_cate_id', $cate_id)->orderBy('post_id', 'desc')->paginate(4);
+            $post_cate = $post->where('post_cate_id', $cate_id)->orderBy('post_id', 'desc')->paginate(11);
             
         }
         // dd($post_cate);
@@ -142,6 +142,19 @@ class HomeController extends BaseController
 
 		return view('site/post_detail', $data);
 
+		
+	}
+	public function tags($tags){
+
+		$post = new Post_Model;
+		$tags_array = explode('-', $tags);
+		$tags_origin = implode(' ', $tags_array);
+
+		$post_tag = $post->join('cate', 'cate.cate_id = post.post_cate_id', 'left')->orderBy('post_id', 'DESC')->like('post_tag', $tags_origin)->paginate(10);
+
+
+
+		// dd($post_tag);
 		
 	}
 

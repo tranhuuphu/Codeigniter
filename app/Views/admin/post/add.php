@@ -141,7 +141,7 @@
 				                    <?php elseif($key['parent_cate_id'] == 0 && in_array($key['cate_id'], $array_key) == TRUE): ?>
 
 
-				                        <?php $id_sub = $key['cate_id'] ?>
+				                        <?php $id_sub = $key['cate_id']; ?>
 				                        <optgroup label="<?= $key['cate_name']; ?>">
 				                        
 
@@ -157,7 +157,7 @@
 
 				                    <?php endif; ?>
 
-				                  <?php endforeach; ?>
+				                <?php endforeach; ?>
 
 
 	                          

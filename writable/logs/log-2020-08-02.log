@@ -18,3 +18,239 @@ CRITICAL - 2020-08-02 08:15:25 --> Undefined variable: totalTime
 #6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
 #7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
 #8 {main}
+CRITICAL - 2020-08-02 12:32:33 --> AuthFilter filter must have a matching alias defined.
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Filters\Filters.php(324): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('AuthFilter')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(373): CodeIgniter\Filters\Filters->enableFilter('AuthFilter', 'before')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-02 12:34:41 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-02 14:35:51 --> Declaration of App\Filters\AuthFilter::before(CodeIgniter\HTTP\RequestInterface $request) must be compatible with CodeIgniter\Filters\FilterInterface::before(CodeIgniter\HTTP\RequestInterface $request, $arguments = NULL)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-08-02 14:43:01 --> Class 'App\Controllers\Auth_model' not found
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(890): App\Controllers\Auth->__construct()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-02 14:43:17 --> Class 'App\Controllers\Auth_Model' not found
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(890): App\Controllers\Auth->__construct()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-02 14:43:47 --> Class 'App\Controllers\Auth_Model' not found
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\Auth->login()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-02 14:44:01 --> Unknown column 'username' in 'where clause'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT *\nFROM `...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\app\Models\Auth_Model.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\Auth.php(77): App\models\Auth_Model->getLogin('admin@gmail.com', '123')
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\Auth->login()
+#7 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-08-02 14:44:33 --> Undefined variable: email
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Models\Auth_Model.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 22, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\Auth.php(77): App\models\Auth_Model->getLogin('admin@gmail.com', '123')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\Auth->login()
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-02 15:09:45 --> syntax error, unexpected '$routes' (T_VARIABLE), expecting ')'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2020-08-02 15:24:58 --> syntax error, unexpected '$routes' (T_VARIABLE), expecting ')'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2020-08-02 15:25:11 --> syntax error, unexpected 'function' (T_FUNCTION), expecting ')'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2020-08-02 15:25:34 --> syntax error, unexpected 'function' (T_FUNCTION), expecting ')'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2020-08-02 15:25:36 --> syntax error, unexpected 'function' (T_FUNCTION), expecting ')'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2020-08-02 15:25:37 --> syntax error, unexpected 'function' (T_FUNCTION), expecting ')'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2020-08-02 15:25:37 --> syntax error, unexpected 'function' (T_FUNCTION), expecting ')'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2020-08-02 15:45:25 --> Undefined variable: cek_login
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\Auth.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 62, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\Auth->login()
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-02 16:54:45 --> Array to string conversion
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\site\post_detail.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\Coding\\Xampp...', 38, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('site/post_detai...', Array, true)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(143): view('site/post_detai...', Array)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getDetailPost('thang-con-2', 'qua-nho-nghe-ng...')
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-02 17:37:11 --> Call to undefined function convert_accented_characters()
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('site/post_detai...', Array, true)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(143): view('site/post_detai...', Array)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getDetailPost('thang-con-2', 'qua-nho-nghe-ng...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-02 17:38:20 --> Call to undefined function convert_accented_characters()
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('site/post_detai...', Array, true)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(143): view('site/post_detai...', Array)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getDetailPost('thang-con-2', 'qua-nho-nghe-ng...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-02 17:38:25 --> Call to undefined function convert_accented_characters()
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('site/post_detai...', Array, true)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(143): view('site/post_detai...', Array)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getDetailPost('thang-con-2', 'qua-nho-nghe-ng...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-02 18:11:09 --> Call to undefined function convert_accented_characters()
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('site/post_detai...', Array, true)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(143): view('site/post_detai...', Array)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getDetailPost('thang-con-2', 'qua-nho-nghe-ng...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-02 18:12:26 --> Undefined property: CodeIgniter\View\View::$load
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\site\post_detail.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\Coding\\Xampp...', 39, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('site/post_detai...', Array, true)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(143): view('site/post_detai...', Array)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getDetailPost('thang-con-2', 'qua-nho-nghe-ng...')
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-02 18:12:50 --> Call to undefined function convert_accented_characters()
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('site/post_detai...', Array, true)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(143): view('site/post_detai...', Array)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getDetailPost('thang-con-2', 'qua-nho-nghe-ng...')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-02 18:39:29 --> Undefined variable: post_info
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 46, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->postAdd()
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-08-02 20:30:10 --> Operand should contain 1 column(s)
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `po...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `po...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `po...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `po...', Array, false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(75): CodeIgniter\Model->insert(Array)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->postAdd()
+#7 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#8 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-08-02 20:32:03 --> Operand should contain 1 column(s)
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `po...')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `po...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `po...')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `po...', Array, false)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\Model.php(755): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(76): CodeIgniter\Model->insert(Array)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->postAdd()
+#7 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#8 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-08-02 20:35:56 --> Array to string conversion
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\site\post_detail.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\Coding\\Xampp...', 48, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('site/post_detai...', Array, true)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(143): view('site/post_detai...', Array)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getDetailPost('blog', 'doanh-nghiep-nh...')
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-02 21:10:27 --> Invalid argument supplied for foreach()
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\site\post_detail.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'D:\\Coding\\Xampp...', 53, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('site/post_detai...', Array, true)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(143): view('site/post_detai...', Array)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getDetailPost('thang-con', 'co-the-ban-chua...')
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-02 21:31:10 --> Array to string conversion
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\admin\post\edit.php(174): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\Coding\\Xampp...', 174, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('admin/post/edit', Array, true)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(108): view('admin/post/edit', Array)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->getEdit('20')
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-02 21:31:57 --> Array to string conversion
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\admin\post\edit.php(174): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'D:\\Coding\\Xampp...', 174, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('admin/post/edit', Array, true)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(108): view('admin/post/edit', Array)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->getEdit('20')
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-02 21:32:12 --> syntax error, unexpected '?>'
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('admin/post/edit', Array, true)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\PostController.php(108): view('admin/post/edit', Array)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\PostController->getEdit('20')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}

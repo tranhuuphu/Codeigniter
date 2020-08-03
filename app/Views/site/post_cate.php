@@ -226,3 +226,53 @@
 
 
 
+<?= $this->section('meta') ?>
+
+  <title><?= $cate_detail->cate_name ?></title>
+
+  <link rel="alternate" href="<?= base_url().'/'.$cate_detail->cate_slug ?>" hreflang="vi-vn"/>
+  <meta rel="canonical" href="<?= base_url().'/'.$cate_detail->cate_slug ?>"/>
+
+
+  <meta name="description" content="<?= $cate_detail->meta_desc ?>" />
+  <meta name="keywords" content="<?= $cate_detail->meta_key ?>" />
+  <meta name="title" content="<?= $cate_detail->cate_name ?>" />
+  
+
+
+
+  <!-- Schema.org markup for Google+ -->
+  
+  <meta itemprop="name" content="<?= $cate_detail->cate_name ?>">
+  <meta itemprop="image" content="<?php //base_url('public/upload/page/'.'/'.$cate_detail->page_image) ?>">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="article">
+  <meta name="twitter:site" content="<?= base_url().'/'.$cate_detail->cate_slug ?>">
+  <meta name="twitter:title" content="<?= $cate_detail->cate_name ?>">
+  <meta name="twitter:description" content="<?= $cate_detail->meta_desc ?>">
+  <meta name="twitter:creator" content="<?= base_url().'/'.$cate_detail->cate_slug ?>">
+  <meta name="twitter:image" content="<?php //base_url('public/upload/page/'.'/'.$cate_detail->page_image) ?>">
+
+  <!-- Open Graph data -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:title" content="<?= $cate_detail->cate_name ?>" />
+  <meta property="og:url" content="<?= base_url().'/'.$cate_detail->cate_slug ?>" />
+  <meta property="og:image" content="<?php //base_url('public/upload/page/'.'/'.$cate_detail->page_image) ?>" />
+  <meta property="og:description" content="<?= $cate_detail->meta_desc ?>" />
+  
+  
+  <meta name="thumbnail" content="<?php //base_url('public/upload/page/'.'/'.$cate_detail->page_image) ?>" />    
+
+
+  <meta property="og:image:secure_url" content="<?php //base_url('public/upload/page/'.'/'.$cate_detail->page_image) ?>" />
+
+
+  <meta content="news" itemprop="genre" name="medium"/>
+  <meta content="vi-VN" itemprop="inLanguage"/>
+  <meta content="" itemprop="articleSection"/>
+  <meta content="<?= $cate_detail->created_at ?>" itemprop="datePublished" name="pubdate"/>
+  <meta content="<?= $cate_detail->updated_at ?>" itemprop="dateModified" name="lastmod"/>
+  <meta content="<?= $cate_detail->created_at ?>" itemprop="dateCreated"/>
+<?= $this->endSection() ?>

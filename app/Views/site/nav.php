@@ -65,17 +65,17 @@
 
 
                     <?php if($key['parent_cate_id'] == 0 && in_array($key['cate_id'], $array_key) == FALSE): ?>
-                      <li><a href="<?php echo $key['cate_slug']; ?>" title="<?= $key['cate_name']; ?>" class="nav-link"><?= $key['cate_name']; ?></a></li>
+                      <li><a href="<?php echo base_url().'/'.$key['cate_slug']; ?>" title="<?= $key['cate_name']; ?>" class="nav-link"><?= $key['cate_name']; ?></a></li>
                     <?php elseif($key['parent_cate_id'] == 0 && in_array($key['cate_id'], $array_key) == TRUE): ?>
 
                       <li class="has-children">
                         <?php $id_sub = $key['cate_id'] ?>
-                        <a href="<?php echo $key['cate_slug']; ?>" title="<?= $key['cate_name']; ?>" class="nav-link"><?= $key['cate_name']; ?></a>
+                        <a href="<?php echo base_url().'/'.$key['cate_slug']; ?>" title="<?= $key['cate_name']; ?>" class="nav-link"><?= $key['cate_name']; ?></a>
                         
                         <ul class="dropdown arrow-top">
                           <?php foreach($cate_info as $key2): ?>
                             <?php if($key2['parent_cate_id'] == $id_sub): ?>
-                              <li><a href="<?php echo $key2['cate_slug']; ?>" title="<?= $key2['cate_name']; ?>" class="nav-link"><?= $key2['cate_name']; ?></a></li>
+                              <li><a href="<?php echo base_url().'/'.$key2['cate_slug']; ?>" title="<?= $key2['cate_name']; ?>" class="nav-link"><?= $key2['cate_name']; ?></a></li>
                             <?php endif; ?>
                           <?php endforeach; ?>
                         </ul>

@@ -33,20 +33,42 @@ $routes->setAutoRoute(true);
 
 
 
-$routes->get('login', 'Login::index');
 
-$routes->group('admin', function($routes)
+$routes->group('auth', function($routes)
+{
+	$routes->get('login', 'Login::index');
+
+	$routes->post('login', 'Auth::login');
+
+	$routes->get('logout', 'Auth::logout');
+
+});
+
+$routes->group('admin', ['filter' => 'authFilter'], function($routes)
 {
 	$routes->get('dashboard', 'Dashboard::index');
 	$routes->get('/', 'Dashboard::index');
 
-    $routes->get('login', 'Login::index');
-    $routes->post('auth/login', 'Auth::login');
 
-    $routes->get('register', 'Login::register');
-    $routes->post('auth/register', 'Auth::register');
+    $routes->group('user', function($routes)
+	{
+		$routes->get('/', 'UserController::index');
 
-    $routes->get('auth/logout', 'Auth::logout');
+		$routes->get('add', 'UserController::getAdd');
+		$routes->post('add', 'UserController::postAdd');
+
+		$routes->get('edit/(:num)', 'UserController::getEdit/$1');
+		$routes->post('edit/(:num)', 'UserController::postEdit/$1');
+
+		$routes->get('move/(:num)', 'UserController::remove/$1');
+
+		$routes->get('delete/(:num)', 'UserController::delete/$1');
+		$routes->post('delete/(:num)', 'UserController::delete/$1');
+
+		$routes->get('restore/(:num)', 'UserController::restore/$1');
+		$routes->post('restore/(:num)', 'UserController::restore/$1');
+		
+	});
 
     $routes->group('post', function($routes)
 	{
@@ -100,6 +122,8 @@ $routes->group('admin', function($routes)
 });
 
 $routes->get('/', 'HomeController::index');
+
+$routes->get('tags/(:any)', 'HomeController::tags/$1');
 
 $routes->get('(:any)/(:any).html', 'HomeController::getDetailPost/$1/$2');
 

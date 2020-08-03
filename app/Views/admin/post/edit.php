@@ -129,48 +129,49 @@
 	                      <div class="form-group">
 	                        <label>Lựa Chọn Menu</label>
 	                        <select class="form-control" name="cate">
-	                        	<?php foreach($cate as $key2): ?>
-                      				<?php $sub_cate[] = $key2['parent_cate_id']; ?>
-
-                      			<?php endforeach; ?>
-
 	                        	<?php foreach($cate as $key): ?>
-	                        		<?php if($key['parent_cate_id'] == 0): ?>
 
-	                        			<!-- Lấy toàn bộ parent_cate_id để kiểm tra -->
-	                        			<?php foreach($cate as $key2): ?>
-	                        				<?php if($key['cate_id'] == $key2['parent_cate_id']): ?>
-	                          					<?php $sub_cate[] = $key2['parent_cate_id']; ?>
-	                          				<?php endif ?>
-	                          			<?php endforeach; ?>
+				                    <?php foreach($cate as $key3): ?>
+				                      <?php $array_key[] = $key3['parent_cate_id']; ?>
 
-	                          			<!-- Nếu tồn tại 1 cate_id của Parent_cate_id = 0 trong sub_cate thì k được show ra -->
-	                          			<?php if(array_key_exists($key['cate_id'], $sub_cate) == NULL): ?>
-	                          				<option value="<?= $key['cate_id'] ?>" <?php if($post_info->post_cate_id == $key['cate_id']){echo 'selected';} ?> ><?= $key['cate_name'] ?></option>
-	                          			<?php else: ?>
+				                    <?php endforeach; ?>
 
-	                          				<!-- Ngược lại thì show ra và thêm các menu con trong đó -->
-	                          				<optgroup label="<?= $key['cate_name'] ?>">
-	                          					<?php $id = $key['cate_id']; ?>
 
-	                          					<!-- Show menu con dựa theo Cate_id có Parent = 0 -->
-	                          					<?php foreach($cate as $key3): ?>
-	                          						<?php if($key3['parent_cate_id'] == $id): ?>
-	                          							<option value="<?= $key3['cate_id'] ?>" <?php if($post_info->post_cate_id == $key3['cate_id']){echo 'selected';} ?>><?= $key3['cate_name'] ?></option>
-	                          						<?php endif ?>
-	                          					<?php endforeach; ?>
+				                    <?php if($key['parent_cate_id'] == 0 && in_array($key['cate_id'], $array_key) == FALSE): ?>
+				                      <option value="<?= $key['cate_id'] ?>" <?php if($post_info->post_cate_id == $key['cate_id']){echo 'selected';} ?>><?= $key['cate_name']; ?></option>
+				                    <?php elseif($key['parent_cate_id'] == 0 && in_array($key['cate_id'], $array_key) == TRUE): ?>
 
-				                          		
-				                          	</optgroup>
-	                          			<?php endif ?>
 
-	                          		<?php endif ?>
+				                        <?php $id_sub = $key['cate_id']; ?>
+				                        <optgroup label="<?= $key['cate_name']; ?>">
+				                        
 
-	                          	<?php endforeach; ?>
+				                          <?php foreach($cate as $key2): ?>
+				                            <?php if($key2['parent_cate_id'] == $id_sub): ?>
+				                              <option value="<?= $key2['cate_id'] ?>" <?php if($post_info->post_cate_id == $key2['cate_id']){echo 'selected';} ?>><?= $key2['cate_name']; ?></option>
+				                            <?php endif; ?>
+				                          <?php endforeach; ?>
+
+
+				                        </optgroup>
+
+
+				                    <?php endif; ?>
+
+				                <?php endforeach; ?>
+
+
+	                        	
 	                          
 	                        </select>
 	                      </div>
 	                    </div>
+
+	                  </div>
+
+	                  <div class="form-group">
+	                    <label for="exampleInputEmail1">Tag</label>
+	                    <input type="text" name="tag_input" class="form-control" id="exampleInputEmail1" value="<?= $post_info->post_tag; ?>">
 
 	                  </div>
 

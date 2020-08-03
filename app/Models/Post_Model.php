@@ -13,7 +13,7 @@
 	    protected $returnType     = 'array';
 	    protected $useSoftDeletes = true;
 
-	    protected $allowedFields = ['post_cate_id', 'post_title', 'post_slug', 'post_image', 'post_intro', 'post_featured', 'post_content', 'post_tag', 'post_view', 'meta_key', 'meta_desc', 'deleted_at'];
+	    protected $allowedFields = ['post_cate_id', 'post_title', 'post_slug', 'post_image', 'post_intro', 'post_featured', 'post_content', 'post_tag', 'post_tag_json', 'post_view', 'meta_key', 'meta_desc', 'deleted_at'];
 
 	    // protected $allowedFields = [];
 

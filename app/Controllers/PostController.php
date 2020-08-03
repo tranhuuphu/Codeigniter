@@ -41,18 +41,28 @@
 			$title = $this->request->getPost('title');
 			$title_slug = url_title(convert_accented_characters($title), '-', true);
 
-			$data = array(
+			$tag_input = $this->request->getPost('tag_input');
 
-				'post_cate_id' => $this->request->getPost('cate'),
-				'post_title' => $this->request->getPost('title'),
-				'post_slug' => $title_slug,
-				'post_intro' => $this->request->getPost('intro'),
-				'post_featured'=> $this->request->getPost('featured'),
-				'post_content' => $this->request->getPost('content'),
-				'post_tag' => $this->request->getPost('tag_input'),
-				'post_view' => 0,
-				'meta_key' => $this->request->getPost('meta_key'),
-				'meta_desc' => $this->request->getPost('meta_desc'),
+            $data_tag = explode(',', $tag_input);
+
+	        foreach($data_tag as $tag){
+	        	$post_tag[] = url_title($tag
+	        		, '-', true);
+	        }
+	        $post_tag = json_encode($post_tag);
+	        // dd($post_tag);
+			$data = array(
+				'post_cate_id' 	=> $this->request->getPost('cate'),
+				'post_title' 	=> $this->request->getPost('title'),
+				'post_slug' 	=> $title_slug,
+				'post_intro' 	=> $this->request->getPost('intro'),
+				'post_featured'	=> $this->request->getPost('featured'),
+				'post_content' 	=> $this->request->getPost('content'),
+				'post_tag' 		=> $tag_input,
+				'post_tag_json' => $post_tag,
+				'post_view' 	=> 0,
+				'meta_key' 		=> $this->request->getPost('meta_key'),
+				'meta_desc' 	=> $this->request->getPost('meta_desc'),
 			);
 			// dd($this->request->getPost('tag_input'));
 
@@ -111,20 +121,35 @@
 			$title = $this->request->getPost('title');
 			$title_slug = url_title(convert_accented_characters($title), '-', true);
 
+			$tag_input = $this->request->getPost('tag_input');
+			// dd($tag_input);
+
+            $data_tag = explode(',', $tag_input);
+
+	        foreach($data_tag as $tag){
+	        	$post_tag[] = url_title($tag
+	        		, '-', true);
+	        }
+	        $post_tag = json_encode($post_tag);
+
+	        // dd($tag_input);
 			$data = array(
-				'post_cate_id' => $this->request->getPost('cate'),
-				'post_title' => $this->request->getPost('title'),
-				'post_slug' => $title_slug,
-				'post_intro' => $this->request->getPost('intro'),
-				'post_featured'=> $this->request->getPost('featured'),
-				'post_content' => $this->request->getPost('content'),
-				'meta_key' => $this->request->getPost('meta_key'),
-				'meta_desc' => $this->request->getPost('meta_desc'),
+				'post_cate_id' 	=> $this->request->getPost('cate'),
+				'post_title' 	=> $this->request->getPost('title'),
+				'post_slug' 	=> $title_slug,
+				'post_intro' 	=> $this->request->getPost('intro'),
+				'post_featured'	=> $this->request->getPost('featured'),
+				'post_content' 	=> $this->request->getPost('content'),
+				'post_tag' 		=> $tag_input,
+				'post_tag_json' => $post_tag,
+				'meta_key' 		=> $this->request->getPost('meta_key'),
+				'meta_desc' 	=> $this->request->getPost('meta_desc'),
 			);
 
 			$img = $this->request->getFile('image');
+			// dd($img);
 
-			if($img){
+			if($img->getClientExtension() != null){
 				$ext = $img->getClientExtension();
 		        $img_name = $title_slug.'-'.time().'.'.$ext;
 

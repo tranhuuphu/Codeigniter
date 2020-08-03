@@ -108,7 +108,7 @@
 
 			$img = $this->request->getFile('image');
 
-			if($img){
+			if($img->getClientExtension() != null){
 				$ext = $img->getClientExtension();
 		        $img_name = $title_slug.'-'.time().'.'.$ext;
 
@@ -129,7 +129,7 @@
 
 			$page->update($id, $data);
 
-			if($img)
+			if($img->getClientExtension() != null)
 	        {
 	            if ($img->isValid() && ! $img->hasMoved())
 	            {

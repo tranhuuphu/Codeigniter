@@ -12,16 +12,24 @@
   .post_content img{
     width: 100% !important;
   }
+  .post_content a{
+    color: blue !important;
+  }
+  .post_content p{
+    font-family: sans-serif !important;
+  }
 </style>
 <section class="site-section">
   <div class="container" >
     <div class="row" >
       <div class="col-md-8 blog-content">
-        <h1 class="lead text-black font-size-24 text-bold" style="font-weight: bold; font-size: 26px;"><?= $post_info->post_title ?></h1>
-        <div class="mt-3 text-black post_content">
-        	<?= $post_info->post_content ?>
+        <div class="">
+          <h1 class="lead text-black font-size-24 text-bold" style="font-weight: bold; font-size: 26px;"><?= $post_info->post_title ?></h1>
+          <div class="mt-3 text-black post_content">
+            <?= $post_info->post_content ?>
+          </div>
         </div>
-        <hr>
+
         <style type="text/css">
         	.related-content a{
         		font-size: 18px;
@@ -32,7 +40,24 @@
         	.related-content a:hover{
         		color: #0582ff;
         	}
+          .clearfix{
+            clear: both;
+          }
         </style>
+        <div class="clearfix"></div>
+        <hr>
+        <div class="pt-1">
+          <?php
+            $data_tag = json_decode($post_info->post_tag_json);
+          ?>
+          Tags:
+          <?php if($data_tag): ?>
+            <?php foreach($data_tag as $tag): ?>
+            <a href="<?php echo base_url('').'/tags/'.$tag ?>">#<?= $tag ?></a>,&nbsp;
+            <?php endforeach; ?>
+          <?php endif; ?>
+        </div>
+        <hr>
         <div class="row">
         	<?php foreach($related as $key): ?>
 	            <div class="col-lg-3 col-md-4">
@@ -50,10 +75,7 @@
         	<?php endforeach; ?>
         </div>
 
-        <div class="pt-1">
-          Tags: <a href="#">#html</a>, <a href="#">#trends</a></p>
-        </div>
-        <hr>
+        
 
 
         <div class="pt-1">
@@ -98,4 +120,56 @@
   </div>
 </section>
 
+<?= $this->endSection() ?>
+
+
+<?= $this->section('meta') ?>
+
+  <title><?= $post_info->post_title ?></title>
+
+  <link rel="alternate" href="<?= base_url().'/'.$post_info->post_slug ?>" hreflang="vi-vn"/>
+  <meta rel="canonical" href="<?= base_url().'/'.$post_info->post_slug ?>"/>
+
+
+  <meta name="description" content="<?= $post_info->meta_desc ?>" />
+  <meta name="keywords" content="<?= $post_info->meta_key ?>" />
+  <meta name="title" content="<?= $post_info->post_title ?>" />
+  
+
+
+
+  <!-- Schema.org markup for Google+ -->
+  
+  <meta itemprop="name" content="<?= $post_info->post_title ?>">
+  <meta itemprop="image" content="<?php base_url('public/upload/post/'.'/'.$post_info->post_image) ?>">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="article">
+  <meta name="twitter:site" content="<?= base_url().'/'.$post_info->post_slug ?>">
+  <meta name="twitter:title" content="<?= $post_info->post_title ?>">
+  <meta name="twitter:description" content="<?= $post_info->meta_desc ?>">
+  <meta name="twitter:creator" content="<?= base_url().'/'.$post_info->post_slug ?>">
+  <meta name="twitter:image" content="<?php base_url('public/upload/post/'.'/'.$post_info->post_image) ?>">
+
+  <!-- Open Graph data -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:title" content="<?= $post_info->post_title ?>" />
+  <meta property="og:url" content="<?= base_url().'/'.$post_info->post_slug ?>" />
+  <meta property="og:image" content="<?php base_url('public/upload/post/'.'/'.$post_info->post_image) ?>" />
+  <meta property="og:description" content="<?= $post_info->meta_desc ?>" />
+  
+  
+  <meta name="thumbnail" content="<?php base_url('public/upload/post/'.'/'.$post_info->post_image) ?>" />    
+
+
+  <meta property="og:image:secure_url" content="<?php base_url('public/upload/post/'.'/'.$post_info->post_image) ?>" />
+
+
+  <meta content="news" itemprop="genre" name="medium"/>
+  <meta content="vi-VN" itemprop="inLanguage"/>
+  <meta content="" itemprop="articleSection"/>
+  <meta content="<?= $post_info->created_at ?>" itemprop="datePublished" name="pubdate"/>
+  <meta content="<?= $post_info->updated_at ?>" itemprop="dateModified" name="lastmod"/>
+  <meta content="<?= $post_info->created_at ?>" itemprop="dateCreated"/>
 <?= $this->endSection() ?>
