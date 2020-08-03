@@ -37,20 +37,20 @@
     <!-- End Top Bar -->
     
     <!-- Nav Bar -->
-    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+    <header class="site-navbar js-sticky-header site-navbar-target shrink" role="banner">
 
       <div class="container">
-        <div class="row align-items-center position-relative">
+        <div class="row align-items-center position-relative ">
           
             
-            <div class="site-logo">
+            <div class="site-logo" >
               <a href="<?= base_url('') ?>" class="text-black"><span class="text-primary">Unearth</a>
             </div>
             
             <div class="col-12">
               <nav class="site-navigation text-right ml-auto " role="navigation">
 
-                <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block ">
                   <li><a href="<?= base_url('') ?>" class="nav-link">Home</a></li>
 
 

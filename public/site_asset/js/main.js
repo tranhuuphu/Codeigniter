@@ -225,7 +225,7 @@ jQuery(document).ready(function($) {
     });
   };
   OnePageNavigation();
-
+  $('#sticky-wrapper').addClass('shrink');
   var siteScroll = function() {
 
   	
@@ -237,7 +237,7 @@ jQuery(document).ready(function($) {
   		if (st > 100) {
   			$('.js-sticky-header').addClass('shrink');
   		} else {
-  			$('.js-sticky-header').removeClass('shrink');
+  			// $('.js-sticky-header').removeClass('shrink');
   		}
 
   	}) 

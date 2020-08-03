@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="<?= base_url('/'); ?>/public/site_asset/css/aos.css">
 
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="<?= base_url('/'); ?>/public/site_asset/css/style.css">
+    <link rel="stylesheet" href="<?= base_url('/'); ?>/public/site_asset/css/style.css?v=<?= date('h-i-s') ?>">
     
 
 

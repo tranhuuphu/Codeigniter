@@ -2,6 +2,11 @@
 
 <?= $this->section('main_content') ?>
 	
+  <nav aria-label="breadcrumb" class="container mt-5 mb-5" style="margin-top: 25px;">
+    <ol class="breadcrumb" style="background-color: #e0e0e0; border-radius: 0; ">
+      <li class="breadcrumb-item"><a style="color: #3c3c40" href="<?= base_url() ?>">Home</a></li>
+    </ol>
+  </nav>
 	<!-- Featured -->
 	<div class="owl-carousel slide-one-item">
       
@@ -108,7 +113,7 @@
                 display: flex;
                 align-items: center;
               }
-              .liner a{font-size: 22px;}
+              .liner a{font-size: 22px; font-weight: bold;}
               .liner::after {
                 content: '';
                 flex: 1;
@@ -126,11 +131,11 @@
                   
                   <?php foreach($post_slice as $row): ?>
                     <?php if($row['parent_cate_id'] == 0): ?>
-                      <div class="liner"><a href="<?= $row['cate_slug']; ?>" title="<?= $row['cate_name']; ?>"><?= $row['cate_name']; ?></a></div>
+                      <div class="liner "><a class="text-bold" href="<?= $row['cate_slug']; ?>" title="<?= $row['cate_name']; ?>"><?= $row['cate_name']; ?></a></div>
                     <?php elseif($row['parent_cate_id'] != 0): ?>
                       <?php foreach($cate_all as $key): ?>
                         <?php if($key['cate_id'] == $row['parent_cate_id']): ?>
-                          <div class="liner"><a href="<?= $key['cate_slug']; ?>" title="<?= $key['cate_name']; ?>"><?= $key['cate_name']; ?></a></div>
+                          <div class="liner"><a class="text-bold" href="<?= $key['cate_slug']; ?>" title="<?= $key['cate_name']; ?>"><?= $key['cate_name']; ?></a></div>
                         <?php endif; ?>
                       <?php endforeach; ?>
                     <?php endif; ?>
@@ -163,7 +168,7 @@
                           <div class="media-body" >
                             <p><?php echo $row['post_intro']; ?></p>
                           </div>
-                        </div>
+                        </div><hr>
                       <?php endforeach; ?>
                     </div>
                     

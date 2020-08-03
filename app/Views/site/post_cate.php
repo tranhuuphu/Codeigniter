@@ -145,13 +145,13 @@
 		background-color: #ededed;
 	}
 	#pagination .active a{
-		font-weight: bold;
+		color: #0a3ffc;
 	}
 </style>
 
 
     <nav aria-label="breadcrumb" class="container mt-5 mb-5">
-	  <ol class="breadcrumb">
+	  <ol class="breadcrumb" style="border-radius: 0">
 	    <li class="breadcrumb-item"><a href="<?= base_url() ?>">Home</a></li>
 	    <li class="breadcrumb-item active" aria-current="page"><a href="<?= $cate_detail->cate_slug ?>"><?= $cate_detail->cate_name ?></a></li>
 	  </ol>
@@ -202,6 +202,7 @@
 						  </div>
 						</div>
         			</div>
+                    
         			<?php endforeach; ?>
 
         		</div>

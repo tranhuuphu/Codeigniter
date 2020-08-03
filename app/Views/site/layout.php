@@ -63,7 +63,7 @@
     </div>
   </div>
   
-  <div class="site-wrap"  id="home-section" style="background: #fcfafa">
+  <div class="site-wrap"  id="home-section" style="background: #f7f7f7">
     <?= $this->include('site/nav'); ?>
 
     

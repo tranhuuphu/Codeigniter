@@ -70,4 +70,4 @@
   <script src="<?= base_url('/'); ?>/public/site_asset/js/jquery.easing.1.3.js"></script>
   <script src="<?= base_url('/'); ?>/public/site_asset/js/aos.js"></script>
   
-  <script src="<?= base_url('/'); ?>/public/site_asset/js/main.js"></script>
+  <script src="<?= base_url('/'); ?>/public/site_asset/js/main.js?v=<?= date('h-i-s') ?>"></script>
