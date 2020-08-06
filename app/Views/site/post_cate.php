@@ -48,48 +48,53 @@
     }
     .blog-img {
     	position: relative;
+      overflow: hidden;
+      height: 250px;
+      background-color: #f7f7f7;
+      box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
     }
     .blog-img img {
     	width: 100%;
+      height: 250px;
+      object-fit:cover; 
+      transition: all .25s ease;
     }
-    .post-category a {
-    	display: inline-block;
-    	background-color: #FF7200;
-    	color: #fff;
-    	font-size: 15px;
-    	padding: 5px 20px;
+    .media {
+      position: relative;
+      overflow: hidden;
+      height: 180px;
     }
+    .media img {
+      height: 180px;
+      object-fit:cover; 
+      transition: all .25s ease;
+    }
+
+    .media{
+      box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+    }
+
+
     .single-blog:hover img {
     	opacity: .85;
     	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
     	transition: 0.3s;
+      cursor: pointer;
     }
-    .post-category {
-    	position: absolute;
-    	left: 0;
-    	bottom: 0;
-    }
+
     .blog-content {
-    	padding: 30px 20px;
+    	padding: 20px 20px;
     }
     .single-blog {
     	border: 1px solid #eee;
+      margin-bottom: 20px;
     }
     .blog-title h4 {
     	font-size: 20px;
     	font-weight: 500;
     	margin-bottom: 5px;
     }
-    .meta ul {
-    	margin: 0;
-    	padding: 0;
-    	list-style: none;
-    }
-    .meta {
-    	margin-bottom: 20px;
-    	opacity: .85;
-    	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
-    }
+
     .blog-content a.box_btn {
     	display: inline-block;
     	background-color: #FF7200;
@@ -139,23 +144,25 @@
     }
 
     #pagination .page-link:focus {
-	  box-shadow: inset 0 -1px 0 #ddd;
-	}
-	#pagination .page-item.active .page-link{
-		background-color: #ededed;
-	}
-	#pagination .active a{
-		color: #0a3ffc;
-	}
+  	  box-shadow: inset 0 -1px 0 #ddd;
+  	}
+  	#pagination .page-item.active .page-link{
+  		background-color: #ededed;
+  	}
+  	#pagination .active a{
+  		color: #0a3ffc;
+  	}
 </style>
 
 
-    <nav aria-label="breadcrumb" class="container mt-5 mb-5">
+
+  <nav aria-label="breadcrumb" class="container mt-5 mb-5">
 	  <ol class="breadcrumb" style="border-radius: 0">
 	    <li class="breadcrumb-item"><a href="<?= base_url() ?>">Home</a></li>
 	    <li class="breadcrumb-item active" aria-current="page"><a href="<?= $cate_detail->cate_slug ?>"><?= $cate_detail->cate_name ?></a></li>
 	  </ol>
 	</nav>
+
 
 
 	<?php $post_i = array_slice($post_cate, 0,3); $post_ii = array_slice($post_cate, 3, 8);  ?>
@@ -168,18 +175,11 @@
 	              <div class="single-blog">
 	                 <div class="blog-img">
 	                    <img src="https://media1.nguoiduatin.vn/media/nguyen-hoang-yen/2018/08/25/nhaphuongtruonggianglamgisauledinhhon.jpg" alt="">
-<!-- 	                    <div class="post-category">
-	                       <a href="#">Creative</a>
-	                    </div> -->
 	                 </div>
 	                 <div class="blog-content">
 	                    <div class="blog-title">
 	                       <h4><a href="<?= base_url().'/'.$cate_detail->cate_slug.'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title="<?= $key['post_title']; ?>"><?= $key['post_title']; ?></a></h4>
-<!-- 	                       <div class="meta">
-	                          <ul>
-	                             <li>04 June 2018</li>
-	                          </ul>
-	                       </div> -->
+
 	                    </div>
 	                    <p><?= $key['post_intro']; ?></p>
 	                    <a href="<?= base_url().'/'.$cate_detail->cate_slug.'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title="<?= $key['post_title']; ?>" class="box_btn">Read more</a>
@@ -188,39 +188,40 @@
 	            </div>
         	<?php endforeach; ?>
         </div>
-
-        <div class="row mt-5">
-        	<div class="col-lg-8">
+        <div class="card" style="border-radius: 0; display: none">
+          <div class="card-body">
+            This is some text within a card body.
+          </div>
+        </div>
+        <div class="row mt-3">
+        	<div class="col-lg-12">
         		<div class="row">
         			<?php foreach($post_ii as $key): ?>
-        			<div class="col-lg-12 col-sm-12 mb-4">
+        			<div class="col-lg-6 col-sm-12 mb-4 post-media">
         				<div class="media">
-						  <img src="https://media1.nguoiduatin.vn/media/nguyen-hoang-yen/2018/08/25/nhaphuongtruonggianglamgisauledinhhon.jpg" class="mr-3" alt="<?= $key['post_title']; ?>" width="35%">
-						  <div class="media-body">
-						    <h5 class="mt-0"><a href="<?= base_url().'/'.$cate_detail->cate_slug.'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title="<?= $key['post_title']; ?>"><?= $key['post_title']; ?></a></h5>
-						    <?= $key['post_intro']; ?>.
-						  </div>
-						</div>
+  						    <img src="https://media1.nguoiduatin.vn/media/nguyen-hoang-yen/2018/08/25/nhaphuongtruonggianglamgisauledinhhon.jpg" class="mr-3" alt="<?= $key['post_title']; ?>" width="35%">
+    						  <div class="media-body">
+    						    <h5 class="mt-1"><a href="<?= base_url().'/'.$cate_detail->cate_slug.'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title="<?= $key['post_title']; ?>"><?= $key['post_title']; ?></a></h5>
+    						    <?= $key['post_intro']; ?>.
+    						  </div>
+  						</div>
         			</div>
                     
         			<?php endforeach; ?>
 
         		</div>
         	</div>
-        	<div class="col-lg-4">
-        		right
-        	</div>
+
         </div>
 
         <div class="mt-3" id="pagination">
         	<?php if ($pager) :?>
-			    <?php $pagi_path = base_url().'/'.getenv('pagi_path').$cate_detail->cate_slug; ?>
-
-			    <?= $pager->links() ?>
-			<?php endif ?>
+  			    <?php $pagi_path = base_url().'/'.getenv('pagi_path').$cate_detail->cate_slug; ?>
+  			    <?= $pager->links() ?>
+  			  <?php endif ?>
         </div>
       </div>
-    </section>
+  </section>
     
 
 <?= $this->endSection() ?>

@@ -104,6 +104,7 @@ class HomeController extends BaseController
 	}
 	public function getDetailPost($cate_slug, $slug){
 		
+		// dd($id);
 		$post = new Post_Model;
 		$cate = new Cate_Model;
 
@@ -117,9 +118,11 @@ class HomeController extends BaseController
 		// dd($slug2);
 		
 
-		
-
 		$post_info = $post->where('post_id', $post_id)->get()->getRow();
+
+		if(!$post_info && $post_info == NULL){
+			return view('errors/404');
+		}
 
 		$cate_id = $post_info->post_cate_id;
 
@@ -134,6 +137,17 @@ class HomeController extends BaseController
 		}
 
 		$data['related'] = $post->join('cate', 'cate.cate_id = post.post_cate_id', 'left')->orderBy('post_id', 'DESC')->groupStart()->where('post_cate_id', $cate_id)->where('post_id !=', $post_id)->groupEnd()->limit(6)->get()->getResultArray();
+
+		$sessionKey = 'post_'.$post_id;
+
+		$post_session = null;
+        $sessionView = session()->set($sessionKey);
+        $post_session = session()->get();
+        // dd($post_session);
+        if (!$post_session) { //nếu chưa có session
+            $sessionView = 1; //set giá trị cho session
+            $post->set('post_view', $post_info->post_view + 1)->where('post_id', $post_id)->update();
+        }
 		
 
 		$data['cate_detail'] = $cate_detail;
@@ -144,19 +158,69 @@ class HomeController extends BaseController
 
 		
 	}
+
+	public function getPage($slug){
+		
+		$page = new Page_Model;
+
+		$page_detail = $page->where('page_slug', $slug)->get()->getRow();
+
+
+		if(!$page_detail && $page_detail == NULL){
+			return view('errors/404');
+		}
+		
+		$data['page_detail'] = $page_detail;
+
+		$post = new Post_Model;
+
+		$data['view'] = $post->join('cate', 'cate.cate_id = post.post_cate_id', 'left')->orderBy('post_id', 'DESC')->limit(5)->get()->getResultArray();
+
+		
+
+		return view('site/page', $data);
+	}
+
 	public function tags($tags){
+
 
 		$post = new Post_Model;
 		$tags_array = explode('-', $tags);
 		$tags_origin = implode(' ', $tags_array);
 
+
 		$post_tag = $post->join('cate', 'cate.cate_id = post.post_cate_id', 'left')->orderBy('post_id', 'DESC')->like('post_tag', $tags_origin)->paginate(10);
 
+		$data = [
+            'post_tag'     	=> $post_tag,
+            'tags'   		=> $tags,
+            'tags_origin'   => $tags_origin,
+            'pager'     	=> $post->pager,
+        ];
 
-
-		// dd($post_tag);
-		
+		return view('site/tags', $data);
 	}
+
+	public function siteMap(){
+		$page = new Page_Model;
+
+		$post = new Post_Model;
+
+		$cate = new Cate_Model;
+
+		$data['page_info'] = $page->get()->getResultArray();
+
+		$data['post_info'] = $post->get()->getResultArray();
+
+		$data['post_cate'] = $post->join('cate', 'cate.cate_id = post.post_cate_id', 'left')->orderBy('post_id', 'DESC')->get()->getResultArray();
+		$data['tags'] = $post->select('post_tag')->get()->getResult();
+
+		// dd($data['tags']);
+
+		return view("site/siteMap", $data);
+	}
+
+
 
 	
 

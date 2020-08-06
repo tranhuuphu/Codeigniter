@@ -1,0 +1,38 @@
+CRITICAL - 2020-08-05 23:08:02 --> syntax error, unexpected ')', expecting ';' or ','
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('site/site-map', Array, true)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(181): view('site/site-map', Array)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->site_map()
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-08-05 23:08:26 --> Undefined variable: page
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\site\site-map.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 16, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('site/site-map', Array, true)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(181): view('site/site-map', Array)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->site_map()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-05 23:08:43 --> Trying to get property 'page_slug' of non-object
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\site\site-map.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\Coding\\Xampp...', 18, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('site/site-map', Array, true)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(181): view('site/site-map', Array)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->site_map()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-05 23:09:27 --> Undefined variable: cate
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\site\site-map.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 37, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('site/site-map', Array, true)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(181): view('site/site-map', Array)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->site_map()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}

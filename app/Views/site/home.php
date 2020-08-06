@@ -4,7 +4,7 @@
 	
   <nav aria-label="breadcrumb" class="container mt-5 mb-5" style="margin-top: 25px;">
     <ol class="breadcrumb" style="background-color: #e0e0e0; border-radius: 0; ">
-      <li class="breadcrumb-item"><a style="color: #3c3c40" href="<?= base_url() ?>">Home</a></li>
+      <li class="breadcrumb-item"><a style="color: #000; font-weight: bold;" href="<?= base_url() ?>">Home</a></li>
     </ol>
   </nav>
 	<!-- Featured -->
@@ -174,7 +174,7 @@
                     
 
                   </div>
-                  <hr>
+                  
                   
               <?php endforeach; ?>
             </div>

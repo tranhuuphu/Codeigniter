@@ -10,12 +10,11 @@
               <div class="col-md-4 ml-auto">
                 <h2 class="footer-heading mb-4">Features</h2>
                 <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Press Releases</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                  <li><a href="#">Privacy</a></li>
-                  <li><a href="#">Contact Us</a></li>
+                  <?php foreach($page_info as $row): ?>
+                    <?php if($row['page_status'] != 1): ?>
+                      <li><a href="<?php echo base_url().'/'.$row['page_slug']; ?>.html" title="<?= $row['page_title']; ?>"><?= $row['page_title']; ?></a></li>
+                    <?php endif; ?>
+                  <?php endforeach; ?>
                 </ul>
               </div>
               
@@ -43,14 +42,13 @@
             </form>
           </div>
         </div>
-        <div class="row pt-5 mt-5 text-center">
+        <div class="row pt-1 mt-1 text-center">
           <div class="col-md-12">
             <div class="border-top pt-5">
-            <p class="copyright"><small>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </small></p>
+              <p class="copyright">
+                <small>
+                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="#" target="_blank" >Phú</a>
+                </small></p>
             </div>
           </div>
           

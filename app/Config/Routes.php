@@ -121,13 +121,25 @@ $routes->group('admin', ['filter' => 'authFilter'], function($routes)
 
 });
 
+
 $routes->get('/', 'HomeController::index');
 
-$routes->get('tags/(:any)', 'HomeController::tags/$1');
 
 $routes->get('(:any)/(:any).html', 'HomeController::getDetailPost/$1/$2');
 
+$routes->get('(:any).html', 'HomeController::getPage/$1');
+
+$routes->get('tags/(:any)', 'HomeController::tags/$1');
+
+$routes->get('site-map.xml', 'HomeController::siteMap');
+
 $routes->get('(:any)', 'HomeController::catePost/$1');
+
+
+
+
+
+
 
 
 /**
