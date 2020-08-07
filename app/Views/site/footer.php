@@ -1,3 +1,31 @@
+  <style type="text/css">
+    #back2Top {
+      width: 40px;
+      line-height: 40px;
+      overflow: hidden;
+      z-index: 999;
+      display: none;
+      cursor: pointer;
+      -moz-transform: rotate(270deg);
+      -webkit-transform: rotate(270deg);
+      -o-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+      transform: rotate(270deg);
+      position: fixed;
+      bottom: 50px;
+      right: 20px;
+      background-color: #DDD;
+      color: #555;
+      text-align: center;
+      font-size: 30px;
+      text-decoration: none;
+  }
+  #back2Top:hover {
+      background-color: #DDF;
+      color: #000;
+  }
+  </style>
+  <a id="back2Top" title="Back to top" href="#">&#10148;</a>
   <footer class="site-footer">
       <div class="container">
         <div class="row">
@@ -57,7 +85,7 @@
     </footer>
 
 
-    <script src="<?= base_url('/'); ?>/public/site_asset/js/jquery-3.3.1.min.js"></script>
+  <script src="<?= base_url('/'); ?>/public/site_asset/js/jquery-3.3.1.min.js"></script>
   <script src="<?= base_url('/'); ?>/public/site_asset/js/popper.min.js"></script>
   <script src="<?= base_url('/'); ?>/public/site_asset/js/bootstrap.min.js"></script>
   <script src="<?= base_url('/'); ?>/public/site_asset/js/owl.carousel.min.js"></script>

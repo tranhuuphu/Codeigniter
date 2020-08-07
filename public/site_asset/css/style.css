@@ -377,7 +377,9 @@ h1, h2, h3, h4, h5,
       bottom: 0;
       z-index: 0;
       width: 100%;
-      background: rgba(0, 0, 0, 0.7); }
+      background: rgba(245, 246, 247);
+      /*background: #fff;*/
+    }
   .bg-image > .container {
     position: relative;
     z-index: 1; }

@@ -90,9 +90,7 @@ class HomeController extends BaseController
             $post_cate = $post->where('post_cate_id', $cate_id)->orderBy('post_id', 'desc')->paginate(11);
             
         }
-        // dd($post_cate);
-        // $data['post_cate'] = $post_cate;
-        // $data['cate_detail'] = $cate_detail;
+
         $data['cate_slug'] = $cate_slug;
         $data = [
             'post_cate'     	=> $post_cate,
@@ -190,6 +188,10 @@ class HomeController extends BaseController
 
 
 		$post_tag = $post->join('cate', 'cate.cate_id = post.post_cate_id', 'left')->orderBy('post_id', 'DESC')->like('post_tag', $tags_origin)->paginate(10);
+
+		if(!$post_tag && $post_tag == NULL){
+			return view('errors/404');
+		}
 
 		$data = [
             'post_tag'     	=> $post_tag,

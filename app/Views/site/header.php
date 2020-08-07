@@ -13,6 +13,8 @@
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="<?= base_url('/'); ?>/public/site_asset/css/style.css?v=<?= date('h-i-s') ?>">
+
+    <script src="<?= base_url('/'); ?>/public/site_asset/js/jquery-3.3.1.min.js"></script>
     
 
 

@@ -85,5 +85,51 @@
 
 <?= $this->section('meta') ?>
 
+  <title>tags: <?= $tags ?></title>
 
-<?= $this->endSection() ?>
+  <link rel="alternate" href="<?= base_url().'/tags/'.$tags?>" hreflang="vi-vn"/>
+  <meta rel="canonical" href="<?= base_url().'/tags/'.$tags?>"/>
+
+
+  <meta name="description" content="tags: <?= $tags ?>" />
+  <meta name="keywords" content="tags: <?= $tags ?>" />
+  <meta name="title" content="tags: <?= $tags ?>" />
+  
+
+
+
+  <!-- Schema.org markup for Google+ -->
+  
+  <meta itemprop="name" content="tags: <?= $tags ?>">
+  <meta itemprop="image" content="<?= base_url('public/upload/page/'.'/') ?>">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="article">
+  <meta name="twitter:site" content="<?= base_url().'/tags/'.$tags?>">
+  <meta name="twitter:title" content="tags: <?= $tags ?>">
+  <meta name="twitter:description" content="tags: <?= $tags ?>">
+  <meta name="twitter:creator" content="<?= base_url().'/tags/'.$tags?>">
+  <meta name="twitter:image" content="<?= base_url('public/upload/page/'.'/') ?>">
+
+  <!-- Open Graph data -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:title" content="tags: <?= $tags ?>" />
+  <meta property="og:url" content="<?= base_url().'/tags/'.$tags?>" />
+  <meta property="og:image" content="<?= base_url('public/upload/page/'.'/') ?>" />
+  <meta property="og:description" content="tags: <?= $tags ?>" />
+  
+  
+  <meta name="thumbnail" content="<?= base_url('public/upload/page/'.'/') ?>" />    
+
+
+  <meta property="og:image:secure_url" content="<?= base_url('public/upload/page/'.'/') ?>" />
+
+
+  <meta content="news" itemprop="genre" name="medium"/>
+  <meta content="vi-VN" itemprop="inLanguage"/>
+  <meta content="" itemprop="articleSection"/>
+  <meta content="" itemprop="datePublished" name="pubdate"/>
+  <meta content="" itemprop="dateModified" name="lastmod"/>
+  <meta content="" itemprop="dateCreated"/>
+<?= $this->endSection() ?>s

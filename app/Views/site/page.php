@@ -169,5 +169,51 @@
 
 <?= $this->section('meta') ?>
 
+  <title><?= $page_detail->page_title ?></title>
 
+  <link rel="alternate" href="<?= base_url().'/'.$page_detail->page_slug ?>" hreflang="vi-vn"/>
+  <meta rel="canonical" href="<?= base_url().'/'.$page_detail->page_slug ?>"/>
+
+
+  <meta name="description" content="<?= $page_detail->meta_desc ?>" />
+  <meta name="keywords" content="<?= $page_detail->meta_key ?>" />
+  <meta name="title" content="<?= $page_detail->page_title ?>" />
+  
+
+
+
+  <!-- Schema.org markup for Google+ -->
+  
+  <meta itemprop="name" content="<?= $page_detail->page_title ?>">
+  <meta itemprop="image" content="<?= base_url('public/upload/page/'.'/'.$page_detail->page_image) ?>">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="article">
+  <meta name="twitter:site" content="<?= base_url().'/'.$page_detail->page_slug ?>">
+  <meta name="twitter:title" content="<?= $page_detail->page_title ?>">
+  <meta name="twitter:description" content="<?= $page_detail->meta_desc ?>">
+  <meta name="twitter:creator" content="<?= base_url().'/'.$page_detail->page_slug ?>">
+  <meta name="twitter:image" content="<?= base_url('public/upload/page/'.'/'.$page_detail->page_image) ?>">
+
+  <!-- Open Graph data -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:title" content="<?= $page_detail->page_title ?>" />
+  <meta property="og:url" content="<?= base_url().'/'.$page_detail->page_slug ?>" />
+  <meta property="og:image" content="<?= base_url('public/upload/page/'.'/'.$page_detail->page_image) ?>" />
+  <meta property="og:description" content="<?= $page_detail->meta_desc ?>" />
+  
+  
+  <meta name="thumbnail" content="<?= base_url('public/upload/page/'.'/'.$page_detail->page_image) ?>" />    
+
+
+  <meta property="og:image:secure_url" content="<?= base_url('public/upload/page/'.'/'.$page_detail->page_image) ?>" />
+
+
+  <meta content="news" itemprop="genre" name="medium"/>
+  <meta content="vi-VN" itemprop="inLanguage"/>
+  <meta content="" itemprop="articleSection"/>
+  <meta content="<?= $page_detail->created_at ?>" itemprop="datePublished" name="pubdate"/>
+  <meta content="<?= $page_detail->updated_at ?>" itemprop="dateModified" name="lastmod"/>
+  <meta content="<?= $page_detail->created_at ?>" itemprop="dateCreated"/>
 <?= $this->endSection() ?>
