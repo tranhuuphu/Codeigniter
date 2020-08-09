@@ -16,7 +16,7 @@ class HomeController extends BaseController
 
 		$cate = new Cate_Model;
 
-		$data['featured'] = $post->join('cate', 'cate.cate_id = post.post_cate_id', 'left')->orderBy('post_id', 'DESC')->where('post_featured', 1)->limit(4)->get()->getResultArray();
+		$data['featured'] = $post->join('cate', 'cate.cate_id = post.post_cate_id', 'left')->orderBy('post_id', 'DESC')->where('post_featured', 1)->limit(5)->get()->getResultArray();
 
 		$cate_all = $cate->where('parent_cate_id', 0)->get()->getResultArray();
 		$cate_2 = $cate->get()->getResultArray();

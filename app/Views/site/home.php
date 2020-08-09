@@ -24,79 +24,30 @@
   			</div>
       <?php endforeach; ?>
 		<?php endif; ?>
-
-      
-
   </div>
-
-  <div class="site-section" style="background-color: #ebedf0">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="">
-          <div class="block__35630">
-            <div class="icon mb-3">
-              <span class="flaticon-mining"></span>
-            </div>
-            <h3 class="mb-3">Surface Mining</h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas obcaecati quo consequuntur mollitia facilis.
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
-          <div class="block__35630">
-            <div class="icon mb-3">
-              <span class="flaticon-gold-ingots"></span>
-            </div>
-            <h3 class="mb-3">Gold Nuggets</h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas obcaecati quo consequuntur mollitia facilis.
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
-          <div class="block__35630">
-            <div class="icon mb-3">
-              <span class="flaticon-wagon"></span>
-            </div>
-            <h3 class="mb-3">Soil Carrier</h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas obcaecati quo consequuntur mollitia facilis.
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" >
-          <div class="block__35630">
-            <div class="icon mb-3">
-              <span class="flaticon-refinery"></span>
-            </div>
-            <h3 class="mb-3">Gold Refinery</h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas obcaecati quo consequuntur mollitia facilis.
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
-          <div class="block__35630">
-            <div class="icon mb-3">
-              <span class="flaticon-blacksmith"></span>
-            </div>
-            <h3 class="mb-3">Anvil Blacksmith</h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas obcaecati quo consequuntur mollitia facilis.
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
-          <div class="block__35630">
-            <div class="icon mb-3">
-              <span class="flaticon-crucible"></span>
-            </div>
-            <h3 class="mb-3">Gold Melt Crucible</h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas obcaecati quo consequuntur mollitia facilis.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <style type="text/css">
+    .post-title a{
+      color: #000;
+      font-weight: 700;
+    }
+
+    .post-title a:hover{
+      color: #47acf5;
+    }
+
     .liner {
       display: flex;
       align-items: center;
     }
-    .liner a{font-size: 22px; font-weight: bold;}
+    .liner a{
+      font-size: 22px; font-weight: bold;
+    }
+    .post-title, .card-title a:hover{
+      color: #47acf5 !important;
+    }
+    .post-value a:hover{
+      color: #47acf5 !important;
+    }
     .liner::after {
       content: '';
       flex: 1;
@@ -105,13 +56,78 @@
       background-color: #f0ad4e;
     }
   </style>
+  <!-- section -->
+  <?php if($featured): ?> 
+  <?php $featured_i = array_slice($featured,0,2); $featured_ii = array_slice($featured,2,3); ?>
+    <div class="section pt-5" style="background-color: #ededed">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row"> 
+          <!-- post -->
+          <?php foreach($featured_i as $key): ?>
+            <div class="col-md-6">
+              <div class="post post-thumb">
+                <a class="post-img" href="<?= $key['cate_slug'].'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title= "<?= $key['post_title'] ?>"><img src="<?= base_url('public/upload/post'.'/'.$key['post_image']) ?>" alt="<?= $key['post_title'] ?>"></a>
+                <div class="post-body">
+                  <div class="post-meta">
+                    <a class="post-category cat-2" href="category.html">JavaScript</a>
+                    <span class="post-date">March 27, 2018</span>
+                  </div>
+                  <h3 class="post-title"><a href="<?= $key['cate_slug'].'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title= "<?= $key['post_title'] ?>"><?= $key['post_title'] ?></a></h3>
+                </div>
+              </div>
+            </div>
+          <?php endforeach; ?>
+          <!-- /post -->
+
+        </div>
+        <!-- /row -->
+
+        <!-- row -->
+        <div class="row">
+
+
+          <!-- post -->
+          <?php foreach($featured_ii as $key): ?>
+            <div class="col-md-4">
+              <div class="post">
+                <a class="post-img" href="<?= $key['cate_slug'].'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title= "<?= $key['post_title'] ?>"><img src="<?= base_url('public/upload/post'.'/'.$key['post_image']) ?>" alt="<?= $key['post_title'] ?>"></a>
+                <div class="post-body">
+                  <div class="post-meta">
+                    <a class="post-category cat-1" href="category.html">Web Design</a>
+                    <span class="post-date">March 27, 2018</span>
+                  </div>
+                  <h3 class="post-title"><a href="<?= $key['cate_slug'].'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title= "<?= $key['post_title'] ?>"><?= $key['post_title'] ?></a></h3>
+                </div>
+              </div>
+            </div>
+          <?php endforeach; ?>
+          <!-- /post -->
+
+
+          <div class="clearfix visible-md visible-lg"></div>
+
+
+        </div>
+        <!-- /row -->
+
+
+      </div>
+      <!-- /container -->
+    </div>
+  <?php endif; ?>
+  <!-- /section -->
+
+
+
 
   <div class="site-section">
     <div class="block__73694 mb-2" id="services-section">
       <div class="container">
         <div class="row d-flex no-gutters align-items-stretch">
           
-          <div class="col-12 col-lg-8  mt-4" style="" data-aos="fade-right">
+          <div class="col-12 col-lg-8  mt-4">
             
             <?php foreach($post_cate as $value): ?>
 
@@ -150,7 +166,7 @@
                   
                   <div class="col-md-6">
                     <?php foreach($value as $row): ?>
-                      <h1 class="mt-0" style="font-size: 20px; "><a href="<?= base_url('/'.$row['cate_slug'].'/'.$row['post_slug'].'-'.$row['post_id'].'.html') ?>" title="<?= $row['post_title']; ?>" class="text-black"><?= $row['post_title']; ?></a></h1>
+                      <h1 class="mt-0 post-value" style="font-size: 20px; "><a href="<?= base_url('/'.$row['cate_slug'].'/'.$row['post_slug'].'-'.$row['post_id'].'.html') ?>" title="<?= $row['post_title']; ?>" class="text-black"><?= $row['post_title']; ?></a></h1>
                       <div class="media" class="mb-3">
 
                         <img width='35%' src="<?= base_url('public/upload/post'.'/'.$row['post_image']) ?>" class="align-self-start mr-3 mt-2" alt="<?= $row['post_title']; ?>">
@@ -170,7 +186,7 @@
 
           
 
-          <div class="col-lg-4 col-md-12 p-lg-3 mt-2 " data-aos="fade-left">
+          <div class="col-lg-4 col-md-12 p-lg-3 mt-2 ">
             <h3 class="mb-3 text-black">Land &amp; Property</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus id dignissimos nemo minus perspiciatis ullam itaque voluptas iure vero, nesciunt unde odit aspernatur distinctio, maiores facere officiis. Cum, esse, iusto?</p>
 
