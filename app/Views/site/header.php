@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="<?= base_url('/'); ?>/public/site_asset/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= base_url('/'); ?>/public/site_asset/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="<?= base_url('/'); ?>/public/site_asset/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="<?= base_url('/'); ?>/public/site_asset/css/owl.theme.default.min.css">
+    <!-- <link rel="stylesheet" href="<?= base_url('/'); ?>/public/site_asset/css/owl.theme.default.min.css"> -->
     <link rel="stylesheet" href="<?= base_url('/'); ?>/public/site_asset/fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="<?= base_url('/'); ?>/public/site_asset/css/aos.css">
 

@@ -84,7 +84,7 @@
 
       $(window).scroll(function() {
           var height = $(window).scrollTop();
-          if (height > 100) {
+          if (height > 150) {
               $('#back2Top').fadeIn();
           } else {
               $('#back2Top').fadeOut();
@@ -97,6 +97,11 @@
               return false;
           });
 
+      });
+
+      $('.set-bg').each(function () {
+          var bg = $(this).data('setbg');
+          $(this).css('background-image', 'url(' + bg + ')');
       });
     </script>
 </html>
