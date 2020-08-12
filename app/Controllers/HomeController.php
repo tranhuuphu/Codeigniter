@@ -222,6 +222,16 @@ class HomeController extends BaseController
 		return view("site/siteMap", $data);
 	}
 
+	public function getSearch(){
+
+		$data['key'] = $_GET['q'];
+		if(!isset($data['key']) && $data['key'] == NULL || $data['key'] == '+' || $data['key'] == '++'){
+			return view('errors/404');
+		}
+
+		return view("site/getSearch", $data);
+	}
+
 
 
 	

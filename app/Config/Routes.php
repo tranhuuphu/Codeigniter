@@ -129,6 +129,8 @@ $routes->get('(:any)/(:any).html', 'HomeController::getDetailPost/$1/$2');
 
 $routes->get('(:any).html', 'HomeController::getPage/$1');
 
+$routes->get('search', 'HomeController::getSearch');
+
 $routes->get('tags/(:any)', 'HomeController::tags/$1');
 
 $routes->get('site-map.xml', 'HomeController::siteMap');

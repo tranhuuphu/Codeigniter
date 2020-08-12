@@ -79,3 +79,347 @@ CRITICAL - 2020-08-12 00:33:24 --> Undefined variable: totalTime
 #6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
 #7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
 #8 {main}
+CRITICAL - 2020-08-12 03:23:06 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 03:28:01 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 03:28:24 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 03:36:53 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 03:39:26 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 03:41:20 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 03:44:56 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 03:46:36 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 03:54:26 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 03:55:07 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 03:55:40 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 03:57:25 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 04:19:10 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 04:20:08 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 04:20:16 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 04:26:18 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 05:04:50 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 05:15:58 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 05:46:22 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 05:55:45 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 05:57:19 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 05:58:51 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 19:10:56 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 19:24:11 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 20:41:48 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 21:05:17 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 21:06:12 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 21:28:09 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 21:28:23 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 21:36:24 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 21:40:03 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-08-12 22:10:48 --> preg_match(): Compilation failed: quantifier does not follow a repeatable item at offset 1
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): C...', 'D:\\Coding\\Xampp...', 431, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Router\Router.php(431): preg_match('#^?search$#u', 'search', Array)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Router\Router.php(177): CodeIgniter\Router\Router->checkRoutes('search')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(793): CodeIgniter\Router\Router->handle('search')
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-12 22:13:38 --> Too few arguments to function App\Controllers\HomeController::getSearch(), 0 passed in D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php on line 918 and exactly 1 expected
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getSearch()
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-08-12 22:51:17 --> Invalid file: site/getSearch.php
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('site/getSearch....')
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('site/getSearch', Array, true)
+#2 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(226): view('site/getSearch')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->getSearch()
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-08-12 22:55:33 --> Undefined variable: totalTime
+#0 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar\Views\toolbar.tpl.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 56, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(498): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Debug\Toolbar.php(455): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Config\Events.php(50): CodeIgniter\Debug\Toolbar->respond()
+#4 [internal function]: CodeIgniter\Events\Events::Config\{closure}()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\Events\Events.php(188): call_user_func(Object(Closure))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(293): CodeIgniter\Events\Events::trigger('pre_system')
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}

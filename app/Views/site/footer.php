@@ -410,15 +410,16 @@
     </footer>
 
 
-  <script src="<?= base_url('/'); ?>/public/site_asset/js/jquery-3.3.1.min.js"></script>
   <!-- <script src="<?= base_url('/'); ?>/public/site_asset/js/popper.min.js"></script> -->
   <script src="<?= base_url('/'); ?>/public/site_asset/js/bootstrap.min.js"></script>
   <script src="<?= base_url('/'); ?>/public/site_asset/js/owl.carousel.min.js"></script>
   <script src="<?= base_url('/'); ?>/public/site_asset/js/jquery.sticky.js"></script>
-  <script src="<?= base_url('/'); ?>/public/site_asset/js/jquery.waypoints.min.js"></script>
-  <script src="<?= base_url('/'); ?>/public/site_asset/js/jquery.animateNumber.min.js"></script>
-  <script src="<?= base_url('/'); ?>/public/site_asset/js/jquery.fancybox.min.js"></script>
-  <script src="<?= base_url('/'); ?>/public/site_asset/js/jquery.easing.1.3.js"></script>
+  <!-- <script src="<?= base_url('/'); ?>/public/site_asset/js/jquery.waypoints.min.js"></script> -->
+  <!-- <script src="<?= base_url('/'); ?>/public/site_asset/js/jquery.animateNumber.min.js"></script> -->
+  <!-- <script src="<?= base_url('/'); ?>/public/site_asset/js/jquery.fancybox.min.js"></script> -->
+  <!-- <script src="<?= base_url('/'); ?>/public/site_asset/js/jquery.easing.1.3.js"></script> -->
   <script src="<?= base_url('/'); ?>/public/site_asset/js/aos.js"></script>
   
   <script src="<?= base_url('/'); ?>/public/site_asset/js/main.js?v=<?= date('h-i-s') ?>"></script>
+  
+  

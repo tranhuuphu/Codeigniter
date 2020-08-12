@@ -35,7 +35,7 @@
       align-items: center;
       padding-left: 15px;
       margin-bottom: 10px;
-      /*margin-right: 10px;*/
+      /*margin-left: -20px;*/
     }
 
     .categories__item.categories__large__item {
@@ -146,10 +146,33 @@
     .card{
       border-radius: 0;
     }
+    @media (min-width: 937px){
+      .pd-15 .categories__item{
+        margin-left: -20px;
+      }
+    }
+    .media{
+        background: #fff;
+        box-shadow: 0px 3px 9px 0px #ccc;
+      }
+
+    @media (max-width: 936px){
+      .pd-15 .categories__item{
+        margin-top: 20px;
+      }
+      .post-15{
+        margin-bottom: 15px;
+        border-bottom: 1px solid #f4f4f4;
+      }
+      
+    }
+    
   </style>
+
     <!-- Categories Section Begin -->
     <section class="categories">
         <div class="container">
+
           <div class="alert text-black" role="alert" style="border-radius: 0; background: #edf4f5">
             Bài Viết Mới
           </div>
@@ -164,7 +187,7 @@
                       </div>
                   </div>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-6 pd-15">
                   <div class="row">
                       <div class="col-lg-6 col-md-6 col-sm-6">
                           <div class="categories__item set-bg" data-setbg="<?= base_url('public/img/') ?>/categories/category-2.jpg">
@@ -213,7 +236,7 @@
   <!-- section -->
   <?php if($featured): ?> 
     <?php $featured_i = array_slice($featured,0,2); $featured_ii = array_slice($featured,2,3); ?>
-    <div class="section pt-3" style="background-color: #ededed">
+    <div class="section pt-5" style="background-color: #ededed">
       <!-- container -->
       <div class="container">
         <div class="alert alert-secondary" role="alert" style="border-radius: 0;">
@@ -223,7 +246,7 @@
         <div class="row"> 
           <!-- post -->
           <?php foreach($featured_i as $key): ?>
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-up">
               <div class="post post-thumb">
                 <a class="post-img" href="<?= $key['cate_slug'].'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title= "<?= $key['post_title'] ?>"><img src="<?= base_url('public/upload/post'.'/'.$key['post_image']) ?>" alt="<?= $key['post_title'] ?>"></a>
                 <div class="post-body">
@@ -242,7 +265,7 @@
         <!-- /row -->
 
         <!-- row -->
-        <div class="row">
+        <div class="row" data-aos="fade-up">
 
 
           <!-- post -->
@@ -303,10 +326,10 @@
                 <?php endforeach; ?>
                 
 
-                <div class="row mb-4 mt-4" data-aos="fade-up" data-aos-duration="3000">
+                <div class="row mb-4 mt-4" data-aos="fade-right" data-aos-duration="2000">
 
                   <!-- thứ 1 -->
-                  <div class="col-md-6">
+                  <div class="col-md-6 post-15">
                     <?php foreach($post_slice as $row): ?>
                     <div class="card">
                       <img src="<?= base_url('public/upload/post'.'/'.$row['post_image']) ?>" class="card-img-top" alt="<?= $row['post_title']; ?>">
@@ -325,7 +348,7 @@
                       <h1 class="mt-0 post-value" style="font-size: 20px; "><a href="<?= base_url('/'.$row['cate_slug'].'/'.$row['post_slug'].'-'.$row['post_id'].'.html') ?>" title="<?= $row['post_title']; ?>" class="text-black"><?= $row['post_title']; ?></a></h1>
                       <div class="media" class="mb-3">
 
-                        <img width='35%' src="<?= base_url('public/upload/post'.'/'.$row['post_image']) ?>" class="align-self-start mr-3 mt-2" alt="<?= $row['post_title']; ?>">
+                        <img width='35%' src="<?= base_url('public/upload/post'.'/'.$row['post_image']) ?>" class="align-self-start mr-3" alt="<?= $row['post_title']; ?>">
                         <div class="media-body" >
                           <p><?php echo $row['post_intro']; ?></p>
                         </div>
@@ -342,7 +365,7 @@
 
           
 
-          <div class="col-lg-4 col-md-12 p-lg-3 mt-2" data-aos="fade-left" data-aos-duration="5000">
+          <div class="col-lg-4 col-md-12 p-lg-3 mt-2">
             <h3 class="mb-3 text-black">Land &amp; Property</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus id dignissimos nemo minus perspiciatis ullam itaque voluptas iure vero, nesciunt unde odit aspernatur distinctio, maiores facere officiis. Cum, esse, iusto?</p>
 
@@ -372,13 +395,13 @@
           <div class="row">
             <div class="col-6 col-md-6 mb-4 col-lg-0 col-lg-3" data-aos="fade-up" data-aos-delay="">
               <div class="block-counter-1">
-                <span class="number"><span data-number="30">0</span>+</span>
+                <span class="number">5+</span>
                 <span class="caption">Year of Experience</span>
               </div>
             </div>
             <div class="col-6 col-md-6 mb-4 col-lg-0 col-lg-3" data-aos="fade-up" data-aos-delay="100">
               <div class="block-counter-1">
-                <span class="number"><span data-number="300">0</span>+</span>
+                <span class="number">20+</span>
                 <span class="caption">Expert Engineers</span>
               </div>
             </div>
