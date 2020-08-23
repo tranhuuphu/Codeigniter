@@ -2,6 +2,12 @@
 <html>
 <head>
 	<?= $this->include('admin/header'); ?>
+	<style type="text/css">
+		.note-editable{
+			overflow: scroll;
+			height: 300px;
+		}
+	</style>
 </head>
 
 

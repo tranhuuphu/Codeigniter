@@ -40,7 +40,7 @@
 <!-- Tempusdominus Bootstrap 4 -->
 <script src="<?= base_url('/'); ?>/public/AdminLTE/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 <!-- Summernote -->
-<script src="<?= base_url('/'); ?>/public/AdminLTE/plugins/summernote/summernote-bs4.min.js"></script>
+<!-- <script src="<?= base_url('/'); ?>/public/AdminLTE/plugins/summernote/summernote-bs4.min.js"></script> -->
 <!-- overlayScrollbars -->
 <script src="<?= base_url('/'); ?>/public/AdminLTE/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- Tag Input -->

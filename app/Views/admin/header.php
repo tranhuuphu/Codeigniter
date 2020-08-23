@@ -21,10 +21,15 @@
   <!-- Daterange picker -->
   <link rel="stylesheet" href="<?= base_url('/'); ?>/public/AdminLTE/plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
-  <link rel="stylesheet" href="<?= base_url('/'); ?>/public/AdminLTE/plugins/summernote/summernote-bs4.css">
+  <!-- <link rel="stylesheet" href="<?= base_url('/'); ?>/public/AdminLTE/plugins/summernote/summernote-bs4.css"> -->
 
   <link rel="stylesheet" href="<?= base_url('/'); ?>/public/AdminLTE/plugins/tag-input/amsify.suggestags.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  <script src="<?= base_url('/'); ?>/public/editor/ckeditor/ckeditor.js"></script>
+
+  <script src="<?= base_url('/'); ?>/public/editor/ckfinder/ckfinder.js"></script>
+
   
 

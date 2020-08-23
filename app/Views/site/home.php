@@ -2,11 +2,7 @@
 
 <?= $this->section('main_content') ?>
 	
-  <nav aria-label="breadcrumb" class="container mt-5 mb-5" style="margin-top: 25px;">
-    <ol class="breadcrumb" style="background-color: #e0e0e0; border-radius: 0; ">
-      <li class="breadcrumb-item"><a style="color: #000; font-weight: bold;" href="<?= base_url() ?>">Home</a></li>
-    </ol>
-  </nav>
+  
 
 
   <style type="text/css">
@@ -16,10 +12,6 @@
     .categories {
       overflow: hidden;
       margin: 20px 0;
-    }
-
-    .categories .container {
-      /*padding-right: 5px;*/
     }
 
     .categories__item {
@@ -49,8 +41,24 @@
     }
 
     .categories__item.categories__large__item .categories__text {
-      max-width: 480px;
-      padding: 0 15px;
+      position: absolute;
+      bottom: 5%;
+
+      padding: 10px 15px;
+      margin-right: 15px;
+      background: #f4f6fa;
+
+      opacity: 0.9;
+      text-align: justify;
+    }
+
+    .categories__item.categories__small__item .categories__text {
+      position: absolute;
+      bottom: 8%;
+      padding: 5px 10px;
+      margin: 0 15px 0 0 ;
+      background: #f2f4f3;
+      opacity: 0.8
     }
 
     .categories__item.categories__large__item .categories__text p {
@@ -58,39 +66,44 @@
     }
 
     .categories__text h1 {
-      font-family: "Cookie", cursive;
       color: #111111;
       margin-bottom: 5px;
+      font-size: 25px;
     }
 
     .categories__text h4 {
       color: #111111;
       font-weight: 700;
+      font-size: 17px;
+      text-align: justify;
     }
 
     .categories__text p {
-      margin-bottom: 10px;
+      margin-bottom: 2px;
     }
 
     .categories__text a {
       font-size: 14px;
-      color: #111111;
+      color: red;
       text-transform: uppercase;
       font-weight: 600;
       position: relative;
-      padding: 0 0 3px;
+      padding: 0 0 2px;
       display: inline-block;
     }
 
-    .categories__text a:after {
+    .categories__text2 a:after {
       position: absolute;
       left: 0;
       bottom: 0;
       height: 2px;
+      margin-top: 8px;
       width: 100%;
       background: #ca1515;
       content: "";
     }
+
+
 
     /*Feature*/
     .post-title a{
@@ -166,75 +179,132 @@
       }
       
     }
+
+    .post-cate h2{
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+    .post-cate a{
+      color: #000;
+    }
+    .post-cate a:hover{
+      color: #2daaf7;
+    }
+    .post-cate-img img{
+      float: left;
+      margin-right: 10px;
+      margin-top: 7px;
+    }
+    .post-cate-img .post-text{
+      padding-right: 10px;
+    }
+    .post-cate-img p{
+      text-align: justify;
+      line-height: 1.5;
+      font-size: 15px;
+    }
+    .card-title h2{
+/*      font-size: 18px;
+      font-weight: bold;
+      text-transform: capitalize !important;
+      color: #000;
+      line-height: 1.4;*/
+    }
+    .card-title a{
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: capitalize !important;
+      color: #000;
+      line-height: 1.4;
+    }
+
+    .block__35630 h3{
+      font-size: 23px;
+      font-weight: bold;
+      color: #f5841b;
+    }
+
+    .block__35630 p{
+      color: #363534;
+    }
     
   </style>
 
+  <nav aria-label="breadcrumb" class="container mt-5 mb-5" style="margin-top: 25px;">
+    <ol class="breadcrumb" style="background-color: #14ADE4; border-radius: 0; ">
+      <li class="breadcrumb-item"><a style="color: #000; font-weight: bold;" href="<?= base_url() ?>">Home</a></li>
+    </ol>
+  </nav>
+
     <!-- Categories Section Begin -->
-    <section class="categories">
-        <div class="container">
+    <?php if(isset($recent_post)): ?> 
+      <?php $recent_post_i = array_slice($recent_post,0,1); $recent_post_ii = array_slice($recent_post,1,4); ?>
+      <section class="categories">
+          <div class="container">
+            <div class="alert text-black" role="alert" style="border-radius: 0; background: #edf4f5">
+              Bài Viết Mới
+            </div>
+            <div class="row">
+              <?php foreach($recent_post_i as $key): ?>
+                <div class="col-lg-6">
+                    <div class="categories__item categories__large__item set-bg" data-setbg="<?= base_url('public/upload/post'.'/'.$key['post_image']) ?>" aria-label="<?= $key['post_title'] ?>" style="background-size: cover, contain;">
+                        <div class="categories__text categories__text2">
+                            <h1 class="card-title"><a href="<?= $key['cate_slug'].'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title= "<?= $key['post_title'] ?>"><?= $key['post_title'] ?></a></h1>
+                            <p><?= $key['post_intro'] ?></p>
+                        </div>
+                    </div>
+                  <?php endforeach; ?>
+                </div>
 
-          <div class="alert text-black" role="alert" style="border-radius: 0; background: #edf4f5">
-            Bài Viết Mới
+                <div class="col-lg-6 pd-15">
+                    <div class="row">
+                      <?php foreach($recent_post_ii as $key): ?>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="categories__item categories__small__item set-bg" data-setbg="<?= base_url('public/upload/post'.'/'.$key['post_image']) ?>" aria-label="<?= $key['post_title'] ?>" style="background-size: cover, contain;">
+                                <div class="categories__text" style="margin-top: 30px;">
+                                    <h4 class="card-title" style="margin-bottom: -0.2rem"><a href="<?= $key['cate_slug'].'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title= "<?= $key['post_title'] ?>"><?= $key['post_title'] ?></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                      <?php endforeach; ?>
+                    </div>
+                </div>
+            </div>
           </div>
-          <div class="row">
-              <div class="col-lg-6">
-                  <div class="categories__item categories__large__item set-bg" data-setbg="https://media.laodong.vn/Storage/NewsPortal/2020/2/25/786783/Untitled-1.jpg" style="background-size: cover, contain;">
-                      <div class="categories__text">
-                          <h1>Women’s fashion</h1>
-                          <p>Sitamet, consectetur adipiscing elit, sed do eiusmod tempor incidid-unt labore
-                          edolore magna aliquapendisse ultrices gravida.</p>
-                          <a href="#">Shop now</a>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-6 pd-15">
-                  <div class="row">
-                      <div class="col-lg-6 col-md-6 col-sm-6">
-                          <div class="categories__item set-bg" data-setbg="<?= base_url('public/img/') ?>/categories/category-2.jpg">
-                              <div class="categories__text">
-                                  <h4>Men’s fashion</h4>
-                                  <p>358 items</p>
-                                  <a href="#">Shop now</a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-lg-6 col-md-6 col-sm-6">
-                          <div class="categories__item set-bg" data-setbg="<?= base_url('public/img/') ?>/categories/category-3.jpg">
-                              <div class="categories__text">
-                                  <h4>Kid’s fashion</h4>
-                                  <p>273 items</p>
-                                  <a href="#">Shop now</a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-lg-6 col-md-6 col-sm-6">
-                          <div class="categories__item set-bg" data-setbg="<?= base_url('public/img/') ?>/categories/category-4.jpg">
-                              <div class="categories__text">
-                                  <h4>Cosmetics</h4>
-                                  <p>159 items</p>
-                                  <a href="#">Shop now</a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-lg-6 col-md-6 col-sm-6">
-                          <div class="categories__item set-bg" data-setbg="<?= base_url('public/img/') ?>/categories/category-5.jpg">
-                              <div class="categories__text">
-                                  <h4>Accessories</h4>
-                                  <p>792 items</p>
-                                  <a href="#">Shop now</a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-        </div>
-    </section>
+      </section>
+    <?php endif; ?>
     <!-- Categories Section End -->
+    
+    <div class="site-section pt-5" style="background-color: #aed8fc">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="">
+            <div class="block__35630">
+              <h3 class="mb-3 text-center">Vận Chuyển Nội Địa</h3>
+              <p class="text-center">Với hơn 5 năm trong ngành vận tải nội địa Khánh An luôn đáp ứng mọi nhu cầu quý khách
+              Liên Hệ Hotline: 0933 444 776 – Mr Mộng để yêu cầu dịch vụ</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+            <div class="block__35630">
+              <h3 class="mb-3 text-center">Dịch Vụ Du Lịch</h3>
+              <p class="text-center">Liên Hệ: 0933 444 776 – Mr Mộng để có thêm thông tin về sản phẩm dịch vụ và các sản phẩm liên quan tới dịch vụ du lịch nội địa.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+            <div class="block__35630">
+              <h3 class="mb-3 text-center">Cho Thuê Xe 30 Chỗ</h3>
+              <p class="text-center">Dịch vụ vận tải cho thuê xe bao gồm cho thuê phương tiện phục vụ du lịch, công tác, đám hỷ,… LH: 0933 444 776.</p>
+            </div>
+          </div>
 
+        </div>
+      </div>
+    </div>
   
   <!-- section -->
-  <?php if($featured): ?> 
+  <?php if(isset($featured)): ?> 
     <?php $featured_i = array_slice($featured,0,2); $featured_ii = array_slice($featured,2,3); ?>
     <div class="section pt-5" style="background-color: #ededed">
       <!-- container -->
@@ -251,8 +321,8 @@
                 <a class="post-img" href="<?= $key['cate_slug'].'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title= "<?= $key['post_title'] ?>"><img src="<?= base_url('public/upload/post'.'/'.$key['post_image']) ?>" alt="<?= $key['post_title'] ?>"></a>
                 <div class="post-body">
                   <div class="post-meta">
-                    <a class="post-category cat-2" href="category.html">JavaScript</a>
-                    <span class="post-date">March 27, 2018</span>
+                    <a class="post-category cat-2" href="<?= $key['cate_slug'] ?>" title= "<?= $key['cate_name'] ?>"><?= $key['cate_name'] ?></a>
+                    <!-- <span class="post-date">March 27, 2018</span> -->
                   </div>
                   <h3 class="post-title"><a href="<?= $key['cate_slug'].'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title= "<?= $key['post_title'] ?>"><?= $key['post_title'] ?></a></h3>
                 </div>
@@ -266,8 +336,6 @@
 
         <!-- row -->
         <div class="row" data-aos="fade-up">
-
-
           <!-- post -->
           <?php foreach($featured_ii as $key): ?>
             <div class="col-md-4">
@@ -275,8 +343,8 @@
                 <a class="post-img post-img2" href="<?= $key['cate_slug'].'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title= "<?= $key['post_title'] ?>"><img src="<?= base_url('public/upload/post'.'/'.$key['post_image']) ?>" alt="<?= $key['post_title'] ?>"></a>
                 <div class="post-body">
                   <div class="post-meta">
-                    <a class="post-category cat-1" href="category.html">Web Design</a>
-                    <span class="post-date">March 27, 2018</span>
+                    <a class="post-category cat-1" href="<?= $key['cate_slug'] ?>" title= "<?= $key['cate_name'] ?>"><?= $key['cate_name'] ?></a>
+                    <!-- <span class="post-date">March 27, 2018</span> -->
                   </div>
                   <h3 class="post-title"><a href="<?= $key['cate_slug'].'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title= "<?= $key['post_title'] ?>"><?= $key['post_title'] ?></a></h3>
                 </div>
@@ -300,7 +368,7 @@
 
 
 
-
+  <!-- Post Follow Cate -->
   <div class="site-section">
     <div class="block__73694 mb-2" id="services-section">
       <div class="container">
@@ -334,7 +402,7 @@
                     <div class="card">
                       <img src="<?= base_url('public/upload/post'.'/'.$row['post_image']) ?>" class="card-img-top" alt="<?= $row['post_title']; ?>">
                       <div class="card-body bg-light">
-                        <h5 class="card-title"><a href="<?= base_url('/'.$row['cate_slug'].'/'.$row['post_slug'].'-'.$row['post_id'].'.html') ?>" title="<?= $row['post_title']; ?>" class="text-black"><?php echo $row['post_title']; ?></a></h5>
+                        <h2 class="card-title"><a href="<?= base_url('/'.$row['cate_slug'].'/'.$row['post_slug'].'-'.$row['post_id'].'.html') ?>" title="<?= $row['post_title']; ?>"><?php echo $row['post_title']; ?></a></h2>
                         <p class="card-text "><?php echo $row['post_intro']; ?></p>
                         <!-- <a href="<?= base_url('/'.$row['cate_slug'].'/'.$row['post_slug'].'-'.$row['post_id'].'.html') ?>" title="<?= $row['post_title']; ?>" class="btn btn-primary">Expand</a> -->
                       </div>
@@ -342,18 +410,24 @@
                   <?php endforeach; ?>
                   </div>
 
-                  <!-- Thứ 2 -->
+                  <!-- Thứ 2 Featured -->
                   <div class="col-md-6">
                     <?php foreach($value as $row): ?>
-                      <h1 class="mt-0 post-value" style="font-size: 20px; "><a href="<?= base_url('/'.$row['cate_slug'].'/'.$row['post_slug'].'-'.$row['post_id'].'.html') ?>" title="<?= $row['post_title']; ?>" class="text-black"><?= $row['post_title']; ?></a></h1>
-                      <div class="media" class="mb-3">
-
-                        <img width='35%' src="<?= base_url('public/upload/post'.'/'.$row['post_image']) ?>" class="align-self-start mr-3" alt="<?= $row['post_title']; ?>">
-                        <div class="media-body" >
-                          <p><?php echo $row['post_intro']; ?></p>
+                      <div class="post-cate">
+                        <h2><a href="<?= base_url('/'.$row['cate_slug'].'/'.$row['post_slug'].'-'.$row['post_id'].'.html') ?>" title="<?= $row['post_title']; ?>"><?= $row['post_title']; ?></a></h2>
+                        <div class="post-cate-img">
+                          <img width="35%" src="<?= base_url('public/upload/post'.'/'.$row['post_image']) ?>" class="align-self-start" alt="<?= $row['post_title']; ?>">
+                          <div class="post-text">
+                            <p><?php echo $row['post_intro']; ?></p>
+                          </div>
                         </div>
-                      </div><hr>
+                      </div>
+                      <hr>
                     <?php endforeach; ?>
+
+                    
+
+
                   </div>
                   
 
@@ -366,7 +440,7 @@
           
 
           <div class="col-lg-4 col-md-12 p-lg-3 mt-2">
-            <h3 class="mb-3 text-black">Land &amp; Property</h3>
+            <h3 class="mb-3 font-size-24">Contact Us</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus id dignissimos nemo minus perspiciatis ullam itaque voluptas iure vero, nesciunt unde odit aspernatur distinctio, maiores facere officiis. Cum, esse, iusto?</p>
 
             <p>Minus perspiciatis ullam itaque voluptas iure vero, nesciunt unde odit aspernatur distinctio, maiores facere officiis. Cum, esse, iusto?</p>

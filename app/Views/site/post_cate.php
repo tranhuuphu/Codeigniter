@@ -93,6 +93,8 @@
     	font-size: 20px;
     	font-weight: 500;
     	margin-bottom: 5px;
+      text-transform: capitalize !important;
+      font-weight: bold;
     }
 
     .blog-content a.box_btn {
@@ -174,7 +176,7 @@
 	            <div class="col-lg-4 col-md-4">
 	              <div class="single-blog">
 	                 <div class="blog-img">
-	                    <img src="https://media1.nguoiduatin.vn/media/nguyen-hoang-yen/2018/08/25/nhaphuongtruonggianglamgisauledinhhon.jpg" alt="">
+	                    <img src="<?= base_url('public/upload/post'.'/'.$key['post_image']) ?>" alt="<?= $key['post_title']; ?>">
 	                 </div>
 	                 <div class="blog-content">
 	                    <div class="blog-title">
@@ -213,13 +215,14 @@
         	</div>
 
         </div>
-
-        <div class="mt-3" id="pagination">
-        	<?php if ($pager) :?>
-  			    <?php $pagi_path = base_url().'/'.getenv('pagi_path').$cate_detail->cate_slug; ?>
-  			    <?= $pager->links() ?>
-  			  <?php endif ?>
-        </div>
+        <?php if($post_count > 11): ?>
+          <div class="mt-3" id="pagination">
+          	<?php if ($pager) :?>
+    			    <?php $pagi_path = base_url().'/'.getenv('pagi_path').$cate_detail->cate_slug; ?>
+    			    <?= $pager->links() ?>
+    			  <?php endif ?>
+          </div>
+        <?php endif; ?>
       </div>
   </section>
     

@@ -56,27 +56,19 @@
 
             </li>
 
-            <li class="nav-item has-treeview">
-              <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-tree"></i>
+            <li class="nav-item has-treeview menu-open ">
+              <a href="<?= base_url('') ?>" target= "_blank" class="nav-link bg-secondary">
+                <i class="nav-icon fas fa-home"></i>
                 <p>
-                  UI Elements
-                  <i class="fas fa-angle-left right"></i>
+                  Go To Home
                 </p>
               </a>
-              <ul class="nav nav-treeview">
 
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Ribbons</p>
-                  </a>
-                </li>
-              </ul>
             </li>
 
 
-            <li class="nav-header">EXAMPLES</li>
+
+            <li class="nav-header">Style</li>
 
 
 

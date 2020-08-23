@@ -35,7 +35,7 @@
                   <tr>
                     <th class="text-center">Order</th>
                     <th class="text-center">Title</th>
-                    <th class="text-center">Name</th>
+                    <!-- <th class="text-center">Name</th> -->
                     <th class="text-center">Status</th>
                     <th class="text-center" width="20%">Option</th>
                   </tr>
@@ -45,7 +45,7 @@
                       <tr>
                         <td><?php echo $row->page_id; ?></td>
                         <td><?php echo $row->page_title; ?></td>
-                        <td><?php echo $row->page_content; ?></td>
+                        <!-- <td><?php echo $row->page_content; ?></td> -->
                         <td><?php if($row->page_status == 1){echo 'Trang Chủ';}else{echo 'Trang Thường';} ?></td>
                         <td>
                           <div class="row text-center">
@@ -63,7 +63,7 @@
                   <tr>
                     <th class="text-center">Order</th>
                     <th class="text-center">Title</th>
-                    <th class="text-center">Name</th>
+                    <!-- <th class="text-center">Name</th> -->
                     <th class="text-center">Status</th>
                     <th class="text-center" width="20%">Option</th>
                   </tr>

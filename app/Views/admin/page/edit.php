@@ -43,21 +43,32 @@
 	                  </div>
 
 
+				        <!-- /.col-->
+
 				        <div class="form-group">
-				          <div class="card card-outline card-info">
-				            <div class="card-header">
-				            	<label>Nội Dung</label>
+				          <div class="card">
+				            <div class="card-body bg-primary">
+				            	<h5 class="card-title">Nội Dung</h5>
 				            </div>
 				            <!-- /.card-header -->
-				            <div class="card-body pad">
-				              <div class="">
-				                <textarea class="textarea" id="summernote" name="content" placeholder="Place some text here" style="width: 100%; height: 300px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"><?= $page_info->page_content ?></textarea>
-				              </div>
-
-				            </div>
+				            <textarea class="textarea" id="content" name="content" placeholder="Place some text here" ><?= $page_info->page_content ?></textarea>
 				          </div>
 				        </div>
 				        <!-- /.col-->
+
+				        <script>
+						    CKEDITOR.replace( 'content',
+								 {
+								     filebrowserBrowseUrl: '<?= base_url('/'); ?>/public/editor/ckfinder/ckfinder.html',
+								     uploadUrl: '<?= base_url('/'); ?>/public/editor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json',
+								     filebrowserImageBrowseUrl: '<?= base_url('/'); ?>/public/editor/ckfinder/ckfinder.html',
+								     filebrowserUploadUrl: '<?= base_url('/'); ?>/public/editor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+								     filebrowserImageUploadUrl: '<?= base_url('/'); ?>/public/editor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+								     
+								 });
+
+
+						</script>
 
 	                  <div class="form-group">
 	                    <label>Meta Key</label>
@@ -76,10 +87,7 @@
 	                </div>
 	                <!-- /.card-body -->
 
-	                <div class="card-footer">
-	                  <button type="submit" class="btn btn-primary">Submit</button>
-	                  <button type="submit" class="btn btn-default float-right">Cancel</button>
-	                </div>
+
 	              
 	            </div>
 	            <!-- /.card -->
@@ -148,6 +156,13 @@
 	            <!-- /.card -->
 	          </div>
 	          <!--/.col (right) -->
+
+	          <div class="col-lg-12 mb-3">
+	          	<div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" class="btn btn-default float-">Cancel</button>
+                </div>
+	          </div>
           
 	        </div>
 	        <!-- /.row -->

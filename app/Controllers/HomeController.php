@@ -10,13 +10,14 @@ class HomeController extends BaseController
 	public function index()
 	{
 		$page = new Page_Model;
+
 		$data['page_home'] = $page->where('page_status', 1)->get()->getRow();
 
 		$post = new Post_Model;
 
 		$cate = new Cate_Model;
 
-		$data['featured'] = $post->join('cate', 'cate.cate_id = post.post_cate_id', 'left')->orderBy('post_id', 'DESC')->where('post_featured', 1)->limit(5)->get()->getResultArray();
+		// $data['featured'] = $post->join('cate', 'cate.cate_id = post.post_cate_id', 'left')->orderBy('post_id', 'DESC')->where('post_featured', 1)->limit(5)->get()->getResultArray();
 
 		$cate_all = $cate->where('parent_cate_id', 0)->get()->getResultArray();
 		$cate_2 = $cate->get()->getResultArray();
@@ -36,21 +37,15 @@ class HomeController extends BaseController
 			}else{
 				$post_cate[] = $post->join('cate', 'cate.cate_id = post.post_cate_id', 'left')->orderBy('post_id', 'DESC')->where('post_cate_id', $key['cate_id'])->limit(5)->get()->getResultArray();
 			}
-			// dd($post_cate);
-
-			
-
 
 		}
-		// dd($post_cate);
+
+		$data['recent_post'] = $post->join('cate', 'cate.cate_id = post.post_cate_id', 'left')->orderBy('post_id', 'DESC')->limit(5)->get()->getResultArray();
+
 
 		$data['cate_all'] = $cate_all;
 		$data['post_cate'] = $post_cate;
 
-
-		// dd($data['post_cate']);
-
-		// dd($data['featured'] );
 
 		return view('site/home', $data);
 
@@ -83,11 +78,14 @@ class HomeController extends BaseController
                     $cate_sub_array[] = $c_s['cate_id'];
                 }
                 $post_cate = $post->whereIn('post_cate_id', $cate_sub_array)->orderBy('post_id', 'desc')->paginate(11);
+                $post_count = $post->whereIn('post_cate_id', $cate_sub_array)->countAllResults();
             }else{
                 $post_cate = $post->where('post_cate_id', $cate_id)->orderBy('post_id', 'desc')->paginate(11);
+                $post_count = $post->where('post_cate_id', $cate_id)->countAllResults();
             }
         }else{
             $post_cate = $post->where('post_cate_id', $cate_id)->orderBy('post_id', 'desc')->paginate(11);
+            $post_count = $post->where('post_cate_id', $cate_id)->countAllResults();
             
         }
 
@@ -96,6 +94,8 @@ class HomeController extends BaseController
             'post_cate'     	=> $post_cate,
             'cate_detail'     	=> $cate_detail,
             'pager'     		=> $post->pager,
+            'post_count'     	=> $post_count,
+
         ];
 
 		return view('site/post_cate', $data);

@@ -1,0 +1,10 @@
+CRITICAL - 2020-08-23 15:32:15 --> Undefined variable: featured
+#0 D:\Coding\Xampp\htdocs\Codeigniter\app\Views\site\home.php(307): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\Coding\\Xampp...', 307, Array)
+#1 D:\Coding\Xampp\htdocs\Codeigniter\system\View\View.php(246): include('D:\\Coding\\Xampp...')
+#2 D:\Coding\Xampp\htdocs\Codeigniter\system\Common.php(1119): CodeIgniter\View\View->render('site/home', Array, true)
+#3 D:\Coding\Xampp\htdocs\Codeigniter\app\Controllers\HomeController.php(50): view('site/home', Array)
+#4 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(918): App\Controllers\HomeController->index()
+#5 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\Coding\Xampp\htdocs\Codeigniter\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Coding\Xampp\htdocs\Codeigniter\index.php(46): CodeIgniter\CodeIgniter->run()
+#8 {main}

@@ -21,6 +21,8 @@
 			width: 100%;
 		}
 
+    
+
 	</style>
 
 	<?php $tags_i = array_slice($post_tag, 0,3); $tags_ii = array_slice($post_tag, 3, 8);  ?>
@@ -29,10 +31,10 @@
       <div class="container">
         <div class="row">
 	        <?php foreach($tags_i as $key): ?>
-	          <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="">
+	          <div class="col-md-6 col-lg-6" data-aos="fade-up">
 	            <div>
 	              <a href="<?= base_url().'/'.$key['cate_slug'].'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title="<?= $key['post_title']; ?>" class="mb-4 d-block img-tags">
-	              	<img src="https://media1.nguoiduatin.vn/media/nguyen-hoang-yen/2018/08/25/nhaphuongtruonggianglamgisauledinhhon.jpg" alt="<?= $key['post_title']; ?>" class="img-fluid rounded">
+	              	<img src="<?= base_url('public/upload/post'.'/'.$key['post_image']) ?>" alt="<?= $key['post_title']; ?>" alt="<?= $key['post_title']; ?>" class="img-fluid rounded">
 	              </a>
 	              <h2 class="font-size-24"><a href="<?= base_url().'/'.$key['cate_slug'].'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title="<?= $key['post_title']; ?>"><?= $key['post_title']; ?></a></h2>
 	              <p><?= $key['post_intro']; ?></p>
@@ -54,7 +56,7 @@
         			<?php foreach($tags_ii as $key): ?>
         			<div class="col-lg-6 col-sm-12 mb-4 post-media">
         				<div class="media">
-  						    <img src="https://media1.nguoiduatin.vn/media/nguyen-hoang-yen/2018/08/25/nhaphuongtruonggianglamgisauledinhhon.jpg" class="mr-3" alt="<?= $key['post_title']; ?>" width="35%">
+  						    <img src="<?= base_url('public/upload/post'.'/'.$key['post_image']) ?>" alt="<?= $key['post_title']; ?>" class="mr-3" width="35%">
     						  <div class="media-body">
     						    <h5 class="mt-1"><a href="<?= base_url().'/'.$key['cate_slug'].'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title="<?= $key['post_title']; ?>"><?= $key['post_title']; ?></a></h5>
     						    <?= $key['post_intro']; ?>.

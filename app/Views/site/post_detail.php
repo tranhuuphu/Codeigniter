@@ -69,7 +69,7 @@
 	            <div class="col-lg-3 col-md-4">
 	              <div class="related-blog">
 	                 <div class="blog-img">
-	                    <img src="https://media1.nguoiduatin.vn/media/nguyen-hoang-yen/2018/08/25/nhaphuongtruonggianglamgisauledinhhon.jpg" alt="" width="100%">
+	                    <img src="<?= base_url('public/upload/post'.'/'.$key['post_image']) ?>" alt="<?= $key['post_title']; ?>" width="100%">
 
 	                 </div>
 	                 <div class="related-content pt-2">
@@ -97,7 +97,7 @@
              <?php if($row['page_status'] == 2): ?>
              	<img src="<?= base_url('public/upload/page'.'/'.$row['page_image']) ?>" alt="<?= $row['page_title']; ?>" class="img-fluid mb-4">
           
-		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
+		          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
 		          <p><a href="<?php echo base_url().'/'.$row['page_slug']; ?>.html" title="<?= $row['page_title']; ?>" class="btn btn-danger btn-md text-white">Read More</a></p>
 
              <?php endif; ?>
