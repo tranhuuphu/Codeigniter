@@ -14,7 +14,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <a href="#" class="text-white"><span class="mr-2 text-white icon-envelope-open-o"></span> <span class="d-none d-md-inline-block">tranhuuphu.me@gmail.com</span></a>
+            <!-- <a href="#" class="text-white"><span class="mr-2 text-white icon-envelope-open-o"></span> <span class="d-none d-md-inline-block">tranhuuphu.me@gmail.com</span></a> -->
             <span class="mx-md-2 d-inline-block"></span>
             <a href="tel:0963214487" class="text-white"><span class="mr-2 text-white icon-phone"></span> <span class="d-none d-md-inline-block">+84 096 321 4487</span></a>
             <?php echo date("jS F, Y", strtotime("11.12.10"));?>
@@ -45,7 +45,7 @@
           
             
             <div class="site-logo" >
-              <a href="<?= base_url('') ?>" class="text-black"><span class="text-primary">Unearth</a>
+              <a href="<?= base_url('') ?>" class="text-black"><span class="text-primary">KhanhAn</a>
             </div>
             
             <div class="col-12">

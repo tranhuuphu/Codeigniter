@@ -1,13 +1,7 @@
 <?= $this->extend('site/layout') ?>
 
 <?= $this->section('main_content') ?>
-<nav aria-label="breadcrumb" class="container mt-5 mb-3">
-  <ol class="breadcrumb" style="background: #dce0e6; border-radius: 0">
-    <li class="breadcrumb-item"><a href="<?= base_url() ?>">Home</a></li>
-    <li class="breadcrumb-item" aria-current="page"><a href="<?= $cate_detail->cate_slug ?>"><?= $cate_detail->cate_name ?></a></li>
-    <li class="breadcrumb-item active" aria-current="page"><?= $post_info->post_title ?></li>
-  </ol>
-</nav>
+
 <style type="text/css">
   .post_content img{
     width: 100% !important;
@@ -19,6 +13,14 @@
     font-family: sans-serif !important;
   }
 </style>
+<nav aria-label="breadcrumb" class="container mt-5 mb-3">
+  <ol class="breadcrumb" style="background: #dce0e6; border-radius: 0">
+    <li class="breadcrumb-item"><a href="<?= base_url() ?>">Home</a></li>
+    <li class="breadcrumb-item" aria-current="page"><a href="<?= $cate_detail->cate_slug ?>"><?= $cate_detail->cate_name ?></a></li>
+    <li class="breadcrumb-item active" aria-current="page"><?= $post_info->post_title ?></li>
+  </ol>
+</nav>
+
 <section class="site-section">
   <div class="container" >
     <div class="row" >
@@ -64,7 +66,11 @@
           <?php endif; ?>
         </div>
         <hr>
+        <div class="alert text-black" role="alert" style="border-radius: 0; background: #edf4f5; font-weight: bold;">
+          <span class="icon-share2"></span> Bài Viết Liên Quan
+        </div>
         <div class="row">
+          
         	<?php foreach($related as $key): ?>
 	            <div class="col-lg-3 col-md-4">
 	              <div class="related-blog">
@@ -84,9 +90,9 @@
         
 
 
-        <div class="pt-1">
+        <!-- <div class="pt-1">
           <h3 class="mb-5">Leave a comment</h3>
-        </div>
+        </div> -->
 
       </div>
 
@@ -94,10 +100,10 @@
         <div class="sidebar-box">
           <h2 class="text-black text-center text-bold" style="margin-top: -15px; font-weight: bold;">Liên Hệ</h2>
           <?php foreach($page_info as $row): ?>
-             <?php if($row['page_status'] == 2): ?>
+             <?php if($row['page_slug'] == 'lien-he'): ?>
              	<img src="<?= base_url('public/upload/page'.'/'.$row['page_image']) ?>" alt="<?= $row['page_title']; ?>" class="img-fluid mb-4">
           
-		          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
+		          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p> -->
 		          <p><a href="<?php echo base_url().'/'.$row['page_slug']; ?>.html" title="<?= $row['page_title']; ?>" class="btn btn-danger btn-md text-white">Read More</a></p>
 
              <?php endif; ?>

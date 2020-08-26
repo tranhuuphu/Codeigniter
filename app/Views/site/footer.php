@@ -324,7 +324,7 @@
 
 <div class="mustang-nav">
   <ul>
-      <li><a href="#" rel="nofollow" target="_blank"><i class="ticon-heart"></i>Tìm đường</a></li>
+      <li><a href="https://goo.gl/maps/XwStm8dghFVc265e9" rel="nofollow" target="_blank"><i class="ticon-heart"></i>Tìm đường</a></li>
       <li><a href="https://zalo.me/0974953600" rel="nofollow" target="_blank"><i class="ticon-zalo-circle2"></i>Chat Zalo</a></li>
       <li class="phone-mobile">
         <a href="tel:0963214487" rel="nofollow" class="button">

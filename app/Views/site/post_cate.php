@@ -84,6 +84,7 @@
 
     .blog-content {
     	padding: 20px 20px;
+      background-color: #fff;
     }
     .single-blog {
     	border: 1px solid #eee;
@@ -184,7 +185,7 @@
 
 	                    </div>
 	                    <p><?= $key['post_intro']; ?></p>
-	                    <a href="<?= base_url().'/'.$cate_detail->cate_slug.'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title="<?= $key['post_title']; ?>" class="box_btn">Read more</a>
+	                    <a href="<?= base_url().'/'.$cate_detail->cate_slug.'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title="<?= $key['post_title']; ?>" class="box_btn"><span class="icon-arrow-right"></span> Read more</a>
 	                 </div>
 	              </div>
 	            </div>
@@ -192,7 +193,7 @@
         </div>
         <div class="card" style="border-radius: 0; display: none">
           <div class="card-body">
-            This is some text within a card body.
+            <!-- This is some text within a card body. -->
           </div>
         </div>
         <div class="row mt-3">
@@ -201,9 +202,9 @@
         			<?php foreach($post_ii as $key): ?>
         			<div class="col-lg-6 col-sm-12 mb-4 post-media">
         				<div class="media">
-  						    <img src="https://media1.nguoiduatin.vn/media/nguyen-hoang-yen/2018/08/25/nhaphuongtruonggianglamgisauledinhhon.jpg" class="mr-3" alt="<?= $key['post_title']; ?>" width="35%">
+  						    <img src="<?= base_url('public/upload/post'.'/'.$key['post_image']) ?>" class="mr-3" alt="<?= $key['post_title']; ?>" width="35%">
     						  <div class="media-body">
-    						    <h5 class="mt-1"><a href="<?= base_url().'/'.$cate_detail->cate_slug.'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title="<?= $key['post_title']; ?>"><?= $key['post_title']; ?></a></h5>
+    						    <h4 class="mt-2 mb-2"><a href="<?= base_url().'/'.$cate_detail->cate_slug.'/'.$key['post_slug'].'-'.$key['post_id'].'.html' ?>" title="<?= $key['post_title']; ?>"><?= $key['post_title']; ?></a></h4>
     						    <?= $key['post_intro']; ?>.
     						  </div>
   						</div>

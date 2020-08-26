@@ -80,7 +80,7 @@
                   <i class="fas fa-angle-left right"></i>
                 </p>
               </a>
-              <ul class="nav nav-treeview" style="border:1px solid yellow">
+              <ul class="nav nav-treeview">
                 <li class="nav-item">
                   <a href="<?= base_url('/admin/post') ?>" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
@@ -105,7 +105,7 @@
                   <i class="fas fa-angle-left right"></i>
                 </p>
               </a>
-              <ul class="nav nav-treeview" style="border:1px solid red">
+              <ul class="nav nav-treeview">
                 <li class="nav-item">
                   <a href="<?= base_url('/admin/cate') ?>" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
@@ -130,7 +130,7 @@
                   <i class="fas fa-angle-left right"></i>
                 </p>
               </a>
-              <ul class="nav nav-treeview" style="border:1px solid red">
+              <ul class="nav nav-treeview">
                 <li class="nav-item">
                   <a href="<?= base_url('/admin/page') ?>" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
@@ -161,7 +161,7 @@
             <label class="text-white">Signing As: <?= session()->get('name'); ?></label>
           </div>
           <div class="" style="margin-top: 0px;">
-            <a href="auth/logout" class="btn btn-danger text-white"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            <a href="<?= base_url('auth/logout') ?>" class="btn btn-danger text-white"><i class="fas fa-sign-out-alt"></i> Logout</a>
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@
           <div class="col-sm-12">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="<?= base_url('/admin/dashboard') ?>">Home</a></li>
-              <li class="breadcrumb-item active"><a href="<?= base_url('/admin/post') ?>">Post</a></li>
+              <li class="breadcrumb-item active"><a href="<?= base_url('/admin/page') ?>">Page</a></li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -26,7 +26,7 @@
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Danh Sách Bài Viết <a href="page/add" class=""><i class="fas fa-plus"></i> Add New Post</a></h3>
+                <h3 class="card-title">Danh Sách Bài Viết <a href="page/add" class=""><i class="fas fa-plus"></i> Add New Page</a></h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">

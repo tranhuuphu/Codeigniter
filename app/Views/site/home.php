@@ -112,7 +112,7 @@
     }
 
     .post-title a:hover{
-      color: #47acf5;
+      color: #1c6afc;
     }
 
     .liner {
@@ -121,12 +121,17 @@
     }
     .liner a{
       font-size: 22px; font-weight: bold;
+      color: #000;
+    }
+
+    .liner a:hover{
+      color: #ff7f08;
     }
     .post-title, .card-title a:hover{
-      color: #47acf5 !important;
+      color: #1c6afc !important;
     }
     .post-value a:hover{
-      color: #47acf5 !important;
+      color: #1c6afc !important;
     }
     .liner::after {
       content: '';
@@ -189,7 +194,7 @@
       color: #000;
     }
     .post-cate a:hover{
-      color: #2daaf7;
+      color: #1c6afc;
     }
     .post-cate-img img{
       float: left;
@@ -232,7 +237,7 @@
   </style>
 
   <nav aria-label="breadcrumb" class="container mt-5 mb-5" style="margin-top: 25px;">
-    <ol class="breadcrumb" style="background-color: #14ADE4; border-radius: 0; ">
+    <ol class="breadcrumb" style="background-color: ; border-radius: 0; ">
       <li class="breadcrumb-item"><a style="color: #000; font-weight: bold;" href="<?= base_url() ?>">Home</a></li>
     </ol>
   </nav>
@@ -242,8 +247,10 @@
       <?php $recent_post_i = array_slice($recent_post,0,1); $recent_post_ii = array_slice($recent_post,1,4); ?>
       <section class="categories">
           <div class="container">
-            <div class="alert text-black" role="alert" style="border-radius: 0; background: #edf4f5">
-              Bài Viết Mới
+            <div class="alert text-black text-center bg-lig" role="alert" style="border-radius: 0; background: #fff; font-weight: bold;">
+              
+              <span class="icon-bullhorn"></span> Bài Viết Mới
+
             </div>
             <div class="row">
               <?php foreach($recent_post_i as $key): ?>
@@ -383,7 +390,7 @@
                 
                 <?php foreach($post_slice as $row): ?>
                   <?php if($row['parent_cate_id'] == 0): ?>
-                    <div class="liner "><a class="text-bold" href="<?= $row['cate_slug']; ?>" title="<?= $row['cate_name']; ?>"><?= $row['cate_name']; ?></a></div>
+                    <div class="liner" data-aos="fade-right" data-aos-duration="2000"><a class="text-bold" href="<?= $row['cate_slug']; ?>" title="<?= $row['cate_name']; ?>"><?= $row['cate_name']; ?></a></div>
                   <?php elseif($row['parent_cate_id'] != 0): ?>
                     <?php foreach($cate_all as $key): ?>
                       <?php if($key['cate_id'] == $row['parent_cate_id']): ?>
@@ -440,17 +447,13 @@
           
 
           <div class="col-lg-4 col-md-12 p-lg-3 mt-2">
-            <h3 class="mb-3 font-size-24">Contact Us</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus id dignissimos nemo minus perspiciatis ullam itaque voluptas iure vero, nesciunt unde odit aspernatur distinctio, maiores facere officiis. Cum, esse, iusto?</p>
+            <h2 class="mb-3 font-size-24 text-black text-center">Contact Us</h2>
+            <?php foreach($page_info as $row): ?>
+              <?php if($row['page_slug'] == 'lien-he'): ?>
+                <a href="<?php echo base_url().'/'.$row['page_slug']; ?>.html" title="<?= $row['page_title']; ?>" class=""><img src="<?= base_url('public/upload/page').'/'.$row['page_image'] ?>" class = "img-fluid"></a>
+              <?php endif; ?>
+            <?php endforeach; ?>
 
-            <p>Minus perspiciatis ullam itaque voluptas iure vero, nesciunt unde odit aspernatur distinctio, maiores facere officiis. Cum, esse, iusto?</p>
-
-            <ul class="ul-check primary list-unstyled mt-5">
-              <li>Lorem ipsum dolor.</li>
-              <li>Quod, amet. Provident.</li>
-              <li>Quo, adipisci, quis.</li>
-              <li>Cumque perspiciatis, blanditiis?</li>
-            </ul>
           </div>
 
         </div>
