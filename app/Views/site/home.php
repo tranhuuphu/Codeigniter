@@ -479,19 +479,19 @@
             <div class="col-6 col-md-6 mb-4 col-lg-0 col-lg-3" data-aos="fade-up" data-aos-delay="100">
               <div class="block-counter-1">
                 <span class="number">20+</span>
-                <span class="caption">Expert Engineers</span>
+                <span class="caption">Customer</span>
               </div>
             </div>
             <div class="col-6 col-md-6 mb-4 col-lg-0 col-lg-3" data-aos="fade-up" data-aos-delay="200">
               <div class="block-counter-1">
-                <span class="number"><span data-number="2000">0</span>+</span>
+                <span class="number"><span data-number="2000">80</span>+</span>
                 <span class="caption">Number of Employees</span>
               </div>
             </div>
             <div class="col-6 col-md-6 mb-4 col-lg-0 col-lg-3" data-aos="fade-up" data-aos-delay="300">
               <div class="block-counter-1">
-                <span class="number"><span data-number="1500">0</span>+</span>
-                <span class="caption">Number of Golds</span>
+                <span class="number"><span data-number="1500">50</span>+</span>
+                <span class="caption">Number Of Vehicle</span>
               </div>
             </div>
           </div>

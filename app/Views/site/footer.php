@@ -357,11 +357,14 @@
           <div class="col-md-6">
             <div class="row">
               <div class="col-md-8">
-                <h2 class="footer-heading mb-4">About Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+                <h2 class="footer-heading mb-4 text-center">About Us</h2>
+                  <p>CÔNG TY TNHH MTV DỊCH VỤ VẬN TẢI KHÁNH AN</p>
+                  <p>Mã số thuế: 3702630576</p>
+                  <p>Địa chỉ: Thửa đất số 2113, Tờ bản đồ số 06 – 8, Khu 8, Phường Phú Mỹ, Thành phố Thủ Dầu Một, Tỉnh Bình Dương</p>
+                  <p>Hotline: 0933 444 776</p>
               </div>
               <div class="col-md-4 ml-auto">
-                <h2 class="footer-heading mb-4">Features</h2>
+                <h2 class="footer-heading mb-4 text-center">Features</h2>
                 <ul class="list-unstyled">
                   <?php foreach($page_info as $row): ?>
                     <?php if($row['page_status'] != 1): ?>
@@ -376,23 +379,13 @@
           <div class="col-md-4 ml-auto">
 
             <div class="">
-              <h2 class="footer-heading mb-4">Subscribe to Newsletter</h2>
-              <form action="#" method="post" class="footer-suscribe-form">
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
-                  <div class="input-group-append">
-                    <button class="btn btn-primary text-white" type="button" id="button-addon2">Subscribe</button>
-                  </div>
-                </div>
-              </div>
-
-
-              <h2 class="footer-heading mb-4">Follow Us</h2>
-                <a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-            </form>
+              <h2 class="footer-heading mb-4 text-center">Bản Đồ</h2>
+              
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d501169.1431321986!2d106.672928!3d11.084737!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa7167e1d6df20a01!2zduG6rW4gdOG6o2kgYsOsbmggZMawxqFuZw!5e0!3m2!1svi!2s!4v1598459780338!5m2!1svi!2s" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
+              <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+              <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+              <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
           </div>
         </div>
         <div class="row pt-1 mt-1 text-center">
