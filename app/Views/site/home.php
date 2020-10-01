@@ -447,7 +447,14 @@
           
 
           <div class="col-lg-4 col-md-12 p-lg-3 mt-2">
-            <h2 class="mb-3 font-size-24 text-black text-center">Contact Us</h2>
+            <div class="card bg-info">
+              <div class="card-header text-black text-center" style="font-weight: bold; font-size: 25px; color: #fff">
+                Contact Us
+              </div>
+
+            </div>
+
+
             <?php foreach($page_info as $row): ?>
               <?php if($row['page_slug'] == 'lien-he'): ?>
                 <a href="<?php echo base_url().'/'.$row['page_slug']; ?>.html" title="<?= $row['page_title']; ?>" class=""><img src="<?= base_url('public/upload/page').'/'.$row['page_image'] ?>" class = "img-fluid"></a>

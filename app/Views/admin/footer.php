@@ -62,4 +62,9 @@
     $('input[name="tag_input"]').amsifySuggestags({
       type : 'bootstrap'
     });
+
+
+
   </script>
+
+
